@@ -1,17 +1,40 @@
 # Recruiting-Cockpit Peter & Martina Kücken
 
-Version 11
+Version 13
 
-## Änderungen
+## Technisch umgesetzt
 
-- Punkt 1 Heute wurde repariert.
-- Status-Auswahl erscheint nur noch bei veröffentlichbaren Inhalten:
-  - LinkedIn Jahresplan
-  - Facebook Jahresplan
-  - Video Jahresplan
-- Statusfarben:
-  - Offen = weiß
-  - Geplant = gelb
-  - Veröffentlicht = grün
-- Fortschrittsanzeige bleibt erhalten.
-- Schnellzugriff bleibt ohne Zahlen.
+- Getrenntes Aktivitätscockpit für Peter und Martina.
+- Tägliche Erfassung nach einzelnen Bereichen.
+- Peter:
+  - WhatsApp Kontakte
+  - WhatsApp Nachfassungen
+  - Facebook Kontakte
+  - LinkedIn Kontakte
+  - Unternehmerkontakte
+  - Empfehlungen
+  - Beiträge
+  - Videos
+- Martina:
+  - Kontakte
+  - Kundenkontakte
+  - Nachfassungen
+  - Facebook Aktivität
+  - Empfehlungen
+  - Beiträge
+  - Videos
+- Tagesanalyse nach Person.
+- Verlustanalyse nach Kanal und Bereich.
+- Wochenübersicht.
+- Monatsübersicht.
+- Jahresübersicht.
+- Historie aller gespeicherten Tage.
+- Ampelsystem:
+  - Grün = 80 bis 100 Prozent
+  - Gelb = 50 bis 79 Prozent
+  - Rot = 0 bis 49 Prozent
+- Alle Daten werden lokal im Browser gespeichert.
+
+## Wichtig
+
+Die Historie ist unbegrenzt, solange der Browser-Speicher nicht gelöscht wird.
