@@ -1899,13 +1899,13 @@ window.APP_CONTENT = {
     },
     {
       "id": "kennzahlen",
-      "title": "14. Kennzahlen",
-      "navTitle": "14. Kennzahlen",
-      "type": "kpi",
+      "title": "14. Vertriebs-Cockpit",
+      "navTitle": "14. Vertriebs-Cockpit",
+      "type": "sales_cockpit",
       "tags": [
         "Controlling"
       ],
-      "text": "Hier tragt ihr Tageswerte ein. Die Daten bleiben lokal im Browser.",
+      "text": "Das Vertriebs-Cockpit zeigt den Weg vom Kontakt bis zum Partner. Tageswerte, Wochenwerte, Monatswerte, Jahreswerte, Trichter und Jahreshochrechnung.",
       "fields": [
         "Kontakte",
         "Gespräche",
@@ -1916,25 +1916,6 @@ window.APP_CONTENT = {
         "Kundenkontakte",
         "Videos",
         "Beiträge"
-      ]
-    },
-    {
-      "id": "github",
-      "title": "15. GitHub Anleitung",
-      "navTitle": "15. GitHub Anleitung",
-      "type": "content",
-      "tags": [
-        "GitHub"
-      ],
-      "chapters": [
-        {
-          "title": "Update einspielen",
-          "body": "ZIP entpacken. index.html, app.js, content.js, style.css und README.md in dein bestehendes GitHub-Repository hochladen. Vorhandene Dateien ersetzen. Commit changes klicken."
-        },
-        {
-          "title": "Wichtig",
-          "body": "Die Dateien müssen direkt im Hauptordner liegen. Nicht in einem Unterordner. Die Startdatei muss exakt index.html heißen. Danach mit Strg + F5 neu laden."
-        }
       ]
     }
   ]

@@ -281,3 +281,13 @@ footer{padding:10px 22px;color:var(--muted);background:#fff;border-top:1px solid
 .field-help p{
   margin:8px 0;
 }
+
+.big-number{font-size:28px;font-weight:bold;color:var(--blue)}
+.funnel{display:flex;flex-direction:column;align-items:center;gap:8px}
+.funnel-step{width:100%;max-width:420px;background:#fbfcfe;border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center}
+.funnel-step span{display:block;font-size:28px;font-weight:bold;margin:5px 0;color:var(--blue)}
+.funnel-arrow{font-size:24px;color:var(--muted)}
+.status-planned{background:#fff5c2!important}
+.status-published{background:#d7f5df!important}
+.status-open{background:#fff!important}
+.traffic-yellow{background:#fff5c2!important;color:#5c4700}

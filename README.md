@@ -1,25 +1,17 @@
 # Recruiting-Cockpit Peter & Martina Kücken
 
-Version 17
+Version 18
 
 ## Neu
 
-Die Vorlagenbibliothek wurde in eigene Bibliotheken aufgeteilt:
-
-- WhatsApp Bibliothek
-- LinkedIn Bibliothek
-- Facebook Bibliothek
-- Unternehmer Bibliothek
-- Empfehlungs Bibliothek
-- Kundenservice Bibliothek
-- Einwand Bibliothek
-- Video- und Sprachnachrichten Bibliothek
-
-Zusätzlich enthalten:
-
-- 52 LinkedIn-Wochen
-- 52 Facebook-Wochen
-- 52 Video-Wochen
-- Arbeitscockpit
-- Tätigkeitsergebnis
-- Tages-, Wochen-, Monats- und Jahresauswertung
+- Punkt GitHub-Anleitung entfernt.
+- Punkt Kennzahlen ersetzt durch Vertriebs-Cockpit.
+- Tages-Cockpit für Peter und Martina.
+- Wochen-, Monats- und Jahresübersicht mit Soll, Ist, Abweichung und Ampel.
+- Aktivitäts-Trichter: Kontakte → Gespräche → Termine → Präsentationen → Verkäufe → Partner.
+- Jahreshochrechnung bis Jahresende.
+- Startseiten-Kachel: Heute noch offen.
+- Ampel:
+  - Grün ab 100 Prozent
+  - Gelb von 80 bis 99 Prozent
+  - Rot unter 80 Prozent
