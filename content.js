@@ -3,15 +3,9 @@ window.APP_CONTENT = {
     {
       "id": "heute",
       "title": "1. Arbeitscockpit",
+      "navTitle": "1. Arbeitscockpit",
       "type": "dashboard",
-      "text": "Das tägliche Arbeitscockpit für Peter und Martina mit Tageserfassung, Tätigkeitsergebnis und Historie.
-
-WhatsApp Kontakte: Ziel sind neue Gespräche. Tagesziel 5.
-WhatsApp Nachfassungen: Bestehende Kontakte weiterentwickeln. Tagesziel 5.
-Facebook Kontakte: Neue Gespräche über Facebook. Tagesziel 5.
-LinkedIn Kontakte: Unternehmer und Selbständige erreichen. Tagesziel 5.
-Unternehmerkontakte: Echte Unternehmergespräche. Tagesziel 3.
-Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
+      "text": "Das tägliche Arbeitscockpit für Peter und Martina mit Tageserfassung, Tätigkeitsergebnis und Historie.",
       "peter": [
         "5 Kontakte ansprechen",
         "2 Unternehmerkontakte aufbauen",
@@ -25,18 +19,49 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
         "1 Empfehlungsfrage stellen",
         "1 WhatsApp-Status veröffentlichen",
         "1 Nachfassung erledigen"
-      ],
-      "plainTitle": "Heute",
-      "navTitle": "1. Arbeitscockpit"
+      ]
     },
     {
       "id": "schnellzugriff",
       "title": "2. Schnellzugriff",
+      "navTitle": "2. Schnellzugriff",
       "type": "links",
       "tags": [
         "Navigation"
       ],
       "links": [
+        {
+          "label": "WhatsApp Bibliothek",
+          "target": "whatsapp_lib"
+        },
+        {
+          "label": "LinkedIn Bibliothek",
+          "target": "linkedin_lib"
+        },
+        {
+          "label": "Facebook Bibliothek",
+          "target": "facebook_lib"
+        },
+        {
+          "label": "Unternehmer Bibliothek",
+          "target": "unternehmer_lib"
+        },
+        {
+          "label": "Empfehlungs Bibliothek",
+          "target": "empfehlungen_lib"
+        },
+        {
+          "label": "Kundenservice Bibliothek",
+          "target": "kunden_lib"
+        },
+        {
+          "label": "Einwand Bibliothek",
+          "target": "einwaende_lib"
+        },
+        {
+          "label": "Video Bibliothek",
+          "target": "video_lib"
+        },
         {
           "label": "LinkedIn Jahresplan",
           "target": "linkedin52"
@@ -50,151 +75,624 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
           "target": "videos52"
         },
         {
-          "label": "Vorlagenbibliothek",
-          "target": "e9"
-        },
-        {
-          "label": "Bestandskunden aktivieren",
-          "target": "e21"
-        },
-        {
-          "label": "Empfehlungen gewinnen",
-          "target": "e22"
-        },
-        {
-          "label": "Unternehmer-Netzwerk",
-          "target": "e23"
-        },
-        {
-          "label": "Personenmarke Peter Kücken",
-          "target": "e25"
-        },
-        {
-          "label": "Partnergewinnung",
-          "target": "e26"
-        },
-        {
-          "label": "Einwände sicher behandeln",
-          "target": "e27"
-        },
-        {
-          "label": "Kennzahlen",
-          "target": "kennzahlen"
-        },
-        {
-          "label": "GitHub Anleitung",
-          "target": "github"
+          "label": "Arbeitscockpit",
+          "target": "heute"
         }
-      ],
-      "plainTitle": "Schnellzugriff",
-      "navTitle": "2. Schnellzugriff"
+      ]
     },
     {
-      "id": "e9",
-      "title": "3. Vorlagenbibliothek",
+      "id": "whatsapp_lib",
+      "title": "3. WhatsApp Bibliothek",
+      "navTitle": "3. WhatsApp Bibliothek",
       "type": "content",
       "tags": [
-        "Vorlagen",
-        "Premium"
+        "WhatsApp",
+        "Vorlagen"
       ],
       "chapters": [
         {
-          "title": "Telefonleitfäden",
-          "body": "Alter Kontakt, ehemaliger Interessent, Unternehmer, Bestandskunde, Empfehlung, Wohnmobilkontakt, LinkedIn-Kontakt, Facebook-Kontakt, ehemaliger Partner, Selbständiger, Verkäufer, Angestellter, Rentner, Empfehlungsgeber, Open-House-Gast, Messekontakt, Gewerbekontakt, Gesundheitsinteressierter, Empfehlungsnachfrage, Terminvereinbarung.",
+          "title": "WhatsApp Erstkontakt warm",
           "templates": [
-            "Hallo Thomas,\n\nPeter Kücken hier.\n\nWir hatten vor einiger Zeit Kontakt miteinander und beim Durchsehen meiner Kontakte bin ich gerade wieder auf deinen Namen gestoßen.\n\nDa dachte ich mir: Bevor wieder Monate vergehen, melde ich mich einfach einmal persönlich.\n\nWie geht es dir aktuell?"
+            "Hallo Thomas,\n\nwir hatten vor einiger Zeit Kontakt miteinander. Beim Durchsehen meiner Kontakte bin ich gerade wieder auf deinen Namen gestoßen.\n\nDa dachte ich mir: Bevor wieder Monate vergehen, melde ich mich einfach einmal persönlich.\n\nWie geht es dir aktuell?"
           ]
         },
         {
-          "title": "LinkedIn-Komplettsequenzen",
-          "body": "Erstkontakt, Zweitkontakt, Drittkontakt, Gesprächseinladung, Branchennachrichten, Nachfassen, Unternehmerfrühstück, Unternehmerabend, Empfehlungsanfrage, Reaktivierung.",
+          "title": "WhatsApp Erstkontakt nach Alltagstreffen",
+          "templates": [
+            "Hallo Thomas,\n\nschön, dass wir uns neulich kennengelernt haben.\n\nIch fand unser kurzes Gespräch angenehm und wollte den Kontakt nicht einfach liegen lassen.\n\nWie geht es dir?"
+          ]
+        },
+        {
+          "title": "WhatsApp Erstkontakt nach Visitenkarte",
+          "templates": [
+            "Hallo Thomas,\n\ndu hattest mir vor einiger Zeit deine Kontaktdaten gegeben.\n\nIch wollte mich jetzt endlich persönlich melden und nicht nur eine Standardnachricht schicken.\n\nWie passt es dir in den nächsten Tagen für einen kurzen Austausch?"
+          ]
+        },
+        {
+          "title": "WhatsApp alter Kontakt beruflich",
+          "templates": [
+            "Hallo Thomas,\n\nwir kennen uns ja schon eine ganze Zeit.\n\nMich würde interessieren, wie sich deine berufliche Situation in den letzten Monaten entwickelt hat.\n\nWas läuft gut und was würdest du gerne verändern?"
+          ]
+        },
+        {
+          "title": "WhatsApp Gesprächseröffnung Veränderung",
+          "templates": [
+            "Hallo Thomas,\n\ndarf ich dir eine persönliche Frage stellen?\n\nWenn du heute noch einmal neu starten könntest, würdest du beruflich denselben Weg wieder wählen?"
+          ]
+        },
+        {
+          "title": "WhatsApp Interesse wecken Business",
+          "templates": [
+            "Hallo Thomas,\n\nich spreche aktuell mit Menschen, die beruflich offen für neue Möglichkeiten oder ein zusätzliches Standbein sind.\n\nIch musste dabei an dich denken.\n\nWäre das grundsätzlich ein Thema, das du dir einmal in Ruhe anschauen würdest?"
+          ]
+        },
+        {
+          "title": "WhatsApp Videonachricht ankündigen",
+          "templates": [
+            "Hallo Thomas,\n\nich habe dir eine kurze persönliche Videonachricht aufgenommen.\n\nEs geht nicht um Druck und nicht um eine Entscheidung.\n\nIch wollte dir nur kurz erklären, warum ich mich gerade bei dir melde."
+          ]
+        },
+        {
+          "title": "WhatsApp Nachfassung 1",
+          "templates": [
+            "Hallo Thomas,\n\nich wollte mich kurz melden.\n\nVielleicht ist meine letzte Nachricht im Alltag etwas untergegangen.\n\nWie sieht es bei dir aktuell aus?"
+          ]
+        },
+        {
+          "title": "WhatsApp Nachfassung 2",
+          "templates": [
+            "Hallo Thomas,\n\nich frage noch einmal freundlich nach.\n\nIst das Thema für dich grundsätzlich interessant oder passt es aktuell eher nicht?"
+          ]
+        },
+        {
+          "title": "WhatsApp Nachfassung 3 Abschluss",
+          "templates": [
+            "Hallo Thomas,\n\ndamit ich dich nicht unnötig nerve:\n\nSoll ich das Thema für den Moment schließen oder zu einem späteren Zeitpunkt noch einmal aufgreifen?"
+          ]
+        },
+        {
+          "title": "WhatsApp Terminfrage",
+          "templates": [
+            "Wann passt es dir besser für ein kurzes Telefonat?\n\nDienstag oder Mittwoch?\n\nEs reichen 15 bis 20 Minuten."
+          ]
+        },
+        {
+          "title": "WhatsApp Terminbestätigung",
+          "templates": [
+            "Super, dann halten wir fest:\n\nUnser Gespräch ist am [Tag] um [Uhrzeit].\n\nIch freue mich auf den Austausch."
+          ]
+        },
+        {
+          "title": "WhatsApp Terminerinnerung",
+          "templates": [
+            "Kurze Erinnerung an unser Gespräch heute um [Uhrzeit].\n\nIch freue mich drauf."
+          ]
+        },
+        {
+          "title": "WhatsApp Terminverschiebung",
+          "templates": [
+            "Hallo Thomas,\n\nbei mir hat sich zeitlich etwas verschoben.\n\nKönnen wir unseren Termin auf [Alternative 1] oder [Alternative 2] legen?"
+          ]
+        },
+        {
+          "title": "WhatsApp Empfehlung anfragen",
+          "templates": [
+            "Eine Frage habe ich noch:\n\nWer fällt dir spontan ein, der offen für zusätzliche Einkommensmöglichkeiten, Gesundheit oder neue Kontakte sein könnte?"
+          ]
+        },
+        {
+          "title": "WhatsApp Empfehlung Kontaktfreigabe",
+          "templates": [
+            "Würdest du Thomas kurz schreiben, dass ich mich bei ihm melden darf?\n\nDann ist der Kontakt für ihn nicht kalt und wir starten viel angenehmer."
+          ]
+        },
+        {
+          "title": "WhatsApp Reaktivierung ehemaliger Partner",
+          "templates": [
+            "Hallo Thomas,\n\nwir haben lange nichts voneinander gehört.\n\nIch musste in den letzten Tagen an frühere Partner denken und da bist du mir eingefallen.\n\nWie geht es dir heute?"
+          ]
+        },
+        {
+          "title": "WhatsApp ehemaliger Interessent",
+          "templates": [
+            "Hallo Petra,\n\nwir hatten vor einiger Zeit einmal über berufliche Möglichkeiten gesprochen.\n\nMich interessiert, wie sich deine Situation seitdem entwickelt hat.\n\nWas beschäftigt dich aktuell?"
+          ]
+        },
+        {
+          "title": "WhatsApp Bestandskunde Service",
+          "templates": [
+            "Hallo Frau Müller,\n\nich wollte mich persönlich erkundigen, wie zufrieden Sie aktuell mit Ihrem HYLA sind.\n\nWelche Funktion nutzen Sie im Alltag am häufigsten?"
+          ]
+        },
+        {
+          "title": "WhatsApp Kunde Empfehlung",
+          "templates": [
+            "Hallo Frau Müller,\n\nSie kennen den HYLA inzwischen sehr gut.\n\nWer aus Ihrem Umfeld legt ebenfalls Wert auf Gesundheit, Sauberkeit und Lebensqualität?"
+          ]
+        },
+        {
+          "title": "WhatsApp Wohnmobilkontakt",
+          "templates": [
+            "Hallo Thomas,\n\nwir teilen ja die Leidenschaft fürs Wohnmobil.\n\nWelche Reise steht bei euch als Nächstes an?"
+          ]
+        },
+        {
+          "title": "WhatsApp Unternehmerkontakt",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nich spreche aktuell mit Unternehmern aus der Region über Kundengewinnung, Netzwerke und aktuelle Entwicklungen.\n\nMich würde Ihre Einschätzung interessieren.\n\nHätten Sie Zeit für einen kurzen Austausch?"
+          ]
+        },
+        {
+          "title": "WhatsApp Nach Gespräch",
+          "templates": [
+            "Hallo Thomas,\n\nvielen Dank für unser Gespräch.\n\nIch fand besonders spannend, was du über deine aktuelle Situation gesagt hast.\n\nLass uns dazu gerne im Kontakt bleiben."
+          ]
+        },
+        {
+          "title": "WhatsApp Entscheidung klären",
+          "templates": [
+            "Wenn du heute entscheiden müsstest:\n\nWas spricht aktuell eher dafür?\n\nUnd was spricht eher dagegen?"
+          ]
+        },
+        {
+          "title": "WhatsApp Partner fragen",
+          "templates": [
+            "Welche Fragen wird dein Partner vermutlich stellen?\n\nDann können wir diese Punkte vorher sauber klären."
+          ]
+        },
+        {
+          "title": "WhatsApp Kein Geld",
+          "templates": [
+            "Ich verstehe dich.\n\nDarf ich fragen: Geht es wirklich um Geld oder eher um Sicherheit bei der Entscheidung?"
+          ]
+        },
+        {
+          "title": "WhatsApp Keine Zeit",
+          "templates": [
+            "Das verstehe ich.\n\nFehlt aktuell wirklich Zeit oder fehlt dem Thema im Moment noch die Priorität?"
+          ]
+        },
+        {
+          "title": "WhatsApp Bauchgefühl",
+          "templates": [
+            "Wie ist dein aktuelles Bauchgefühl zu dem Thema?\n\nEher offen, eher unsicher oder eher nein?"
+          ]
+        },
+        {
+          "title": "WhatsApp letzter sauberer Abschluss",
+          "templates": [
+            "Danke dir für deine ehrliche Rückmeldung.\n\nDann lasse ich das Thema für den Moment ruhen.\n\nWenn es später wieder passt, melde dich gerne."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linkedin_lib",
+      "title": "4. LinkedIn Bibliothek",
+      "navTitle": "4. LinkedIn Bibliothek",
+      "type": "content",
+      "tags": [
+        "LinkedIn",
+        "Vorlagen"
+      ],
+      "chapters": [
+        {
+          "title": "LinkedIn Erstkontakt Unternehmer",
           "templates": [
             "Hallo Herr Mustermann,\n\nmir ist Ihr Profil aufgefallen und deshalb wollte ich mich kurz vorstellen.\n\nIch beschäftige mich seit vielen Jahren mit Vertrieb, Unternehmertum und Netzwerkaufbau und tausche mich gerne mit interessanten Unternehmern aus.\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "Facebook-Messenger-Bibliothek",
-          "body": "Erstkontakte, Kontakte nach Like oder Kommentar, Unternehmerkontakte, Wohnmobilkontakte, Gesundheitskontakte, Reaktivierungen, Veranstaltungs-Einladungen, Empfehlungsanfragen, Gesprächseinleitungen, Terminvereinbarungen.",
+          "title": "LinkedIn Zweitkontakt nach Annahme",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nvielen Dank für die Vernetzung.\n\nMich interessiert:\n\nWelche Entwicklung beschäftigt Sie aktuell als Unternehmer am stärksten?\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "LinkedIn Drittkontakt vertiefen",
+          "templates": [
+            "Vielen Dank für Ihre Einschätzung.\n\nDiese Beobachtung höre ich aktuell von mehreren Unternehmern.\n\nWie gehen Sie persönlich damit um?"
+          ]
+        },
+        {
+          "title": "LinkedIn Gesprächseinladung",
+          "templates": [
+            "Herr Mustermann,\n\nich finde unseren Austausch spannend.\n\nLassen Sie uns doch einmal 20 Minuten telefonieren.\n\nWann passt es Ihnen besser, vormittags oder nachmittags?"
+          ]
+        },
+        {
+          "title": "LinkedIn Steuerberater",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nSie begleiten täglich Unternehmer.\n\nMich würde interessieren:\n\nWelche Themen beschäftigen Ihre Mandanten aktuell besonders häufig?"
+          ]
+        },
+        {
+          "title": "LinkedIn Immobilienmakler",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nSie haben täglich Kontakt zu Menschen in Veränderungssituationen.\n\nWelche Entwicklungen beobachten Sie aktuell am häufigsten?"
+          ]
+        },
+        {
+          "title": "LinkedIn Handwerker",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nwelche Herausforderungen erleben Sie aktuell stärker:\n\nKundengewinnung oder Mitarbeitergewinnung?"
+          ]
+        },
+        {
+          "title": "LinkedIn Fitnessstudio",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nGesundheit gewinnt immer mehr an Bedeutung.\n\nWelche Veränderungen beobachten Sie aktuell bei Ihren Mitgliedern?"
+          ]
+        },
+        {
+          "title": "LinkedIn Wohnmobilbranche",
+          "templates": [
+            "Hallo Herr Mustermann,\n\ndie Reisemobilbranche hat sich in den letzten Jahren stark verändert.\n\nWelche Entwicklungen sehen Sie aktuell?"
+          ]
+        },
+        {
+          "title": "LinkedIn Versicherungsmakler",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nwelche finanziellen Sorgen und Wünsche begegnen Ihnen aktuell bei Ihren Kunden am häufigsten?"
+          ]
+        },
+        {
+          "title": "LinkedIn Nachfassen 7 Tage",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nich wollte mich noch einmal kurz melden.\n\nMich würde Ihre Einschätzung zu meiner letzten Frage interessieren.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "LinkedIn Nachfassen 14 Tage",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nvielleicht ist meine Nachricht im Alltag etwas untergegangen.\n\nDeshalb wollte ich noch einmal freundlich nachfragen.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "LinkedIn Nachfassen 21 Tage",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nkein Problem, wenn das Thema aktuell keine Priorität hat.\n\nMich interessiert lediglich Ihre Sichtweise.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "LinkedIn Unternehmerfrühstück",
+          "templates": [
+            "Hallo Herr Mustermann,\n\neinmal im Monat tausche ich mich mit Unternehmern aus Nordhessen aus.\n\nKein Verkauf. Kein Vortrag. Nur Austausch.\n\nHätten Sie grundsätzlich Interesse?"
+          ]
+        },
+        {
+          "title": "LinkedIn Unternehmerabend",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nwir veranstalten regelmäßig kleine Unternehmerabende mit ausgewählten Gästen.\n\nDabei geht es um Unternehmertum, Netzwerke und aktuelle Entwicklungen.\n\nWäre das interessant für Sie?"
+          ]
+        },
+        {
+          "title": "LinkedIn Empfehlungsfrage",
+          "templates": [
+            "Herr Mustermann,\n\neine Frage habe ich noch:\n\nMit welchen zwei oder drei Unternehmern sollte ich Ihrer Meinung nach unbedingt einmal sprechen?"
+          ]
+        },
+        {
+          "title": "LinkedIn Reaktivierung",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nwir sind schon längere Zeit vernetzt, hatten aber bisher kaum Gelegenheit zum Austausch.\n\nDeshalb wollte ich mich persönlich melden.\n\nWie geht es Ihnen aktuell?"
+          ]
+        },
+        {
+          "title": "LinkedIn Nordhessen Netzwerk",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nich erweitere aktuell gezielt mein Unternehmernetzwerk in Nordhessen.\n\nDabei suche ich den Austausch mit Menschen, die Verantwortung übernehmen und etwas bewegen.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "LinkedIn nach Kommentar",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nvielen Dank für Ihren Kommentar unter meinem Beitrag.\n\nIhre Sichtweise fand ich interessant.\n\nWollen wir uns dazu vernetzen?"
+          ]
+        },
+        {
+          "title": "LinkedIn Danke nach Gespräch",
+          "templates": [
+            "Herr Mustermann,\n\nvielen Dank für das angenehme Gespräch.\n\nBesonders interessant fand ich Ihre Einschätzung zu [Thema].\n\nIch freue mich auf den weiteren Austausch."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "facebook_lib",
+      "title": "5. Facebook Bibliothek",
+      "navTitle": "5. Facebook Bibliothek",
+      "type": "content",
+      "tags": [
+        "Facebook",
+        "Vorlagen"
+      ],
+      "chapters": [
+        {
+          "title": "Facebook Erstkontakt",
           "templates": [
             "Hallo Thomas,\n\nwir sind hier schon eine ganze Zeit miteinander verbunden.\n\nDeshalb wollte ich mich einfach einmal persönlich melden.\n\nWie geht es dir aktuell?"
           ]
         },
         {
-          "title": "Unternehmer-E-Mail-Bibliothek",
-          "body": "Erstanschreiben an Unternehmer, Steuerberater, Makler, Fitnessstudios, Wohnmobilhändler, Handwerksbetriebe, Gesundheitsunternehmen, Nachfass-E-Mails, Einladungen und Kooperationsanfragen.",
+          "title": "Facebook nach Like",
+          "templates": [
+            "Hallo Petra,\n\nvielen Dank für dein Like unter meinem Beitrag.\n\nDabei ist mir aufgefallen, dass wir zwar vernetzt sind, uns aber noch gar nicht richtig kennen.\n\nDeshalb wollte ich einmal Hallo sagen."
+          ]
+        },
+        {
+          "title": "Facebook nach Kommentar",
+          "templates": [
+            "Hallo Petra,\n\nvielen Dank für deinen Kommentar.\n\nDeine Sichtweise fand ich spannend.\n\nWie bist du zu dem Thema gekommen?"
+          ]
+        },
+        {
+          "title": "Facebook gemeinsame Interessen",
+          "templates": [
+            "Hallo Thomas,\n\nmir ist aufgefallen, dass wir beide Interesse an Unternehmertum und persönlicher Entwicklung haben.\n\nDeshalb wollte ich mich einmal persönlich vorstellen.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Facebook Unternehmerkontakt",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nich habe einige Ihrer Beiträge gelesen und fand Ihre Sichtweise interessant.\n\nWelche Entwicklung beschäftigt Sie aktuell als Unternehmer am stärksten?"
+          ]
+        },
+        {
+          "title": "Facebook Wohnmobilkontakt",
+          "templates": [
+            "Hallo Thomas,\n\nich habe gesehen, dass ihr ebenfalls mit dem Wohnmobil unterwegs seid.\n\nWelche Reise war bisher euer persönliches Highlight?"
+          ]
+        },
+        {
+          "title": "Facebook Gesundheitskontakt",
+          "templates": [
+            "Hallo Petra,\n\ndu beschäftigst dich offensichtlich mit Gesundheit.\n\nWelches Thema ist aus deiner Sicht aktuell besonders wichtig?"
+          ]
+        },
+        {
+          "title": "Facebook Nachfassung 7 Tage",
+          "templates": [
+            "Hallo Thomas,\n\nich wollte mich noch einmal kurz melden.\n\nVielleicht ist meine Nachricht im Alltag etwas untergegangen.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Facebook Nachfassung 14 Tage",
+          "templates": [
+            "Hallo Thomas,\n\nkein Problem, wenn das Thema aktuell keine Priorität hat.\n\nMich interessiert einfach deine Einschätzung.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Facebook Reaktivierung alt",
+          "templates": [
+            "Hallo Thomas,\n\nwir sind hier schon viele Jahre miteinander verbunden.\n\nDa dachte ich mir, ich melde mich einfach einmal persönlich.\n\nWie geht es dir aktuell?"
+          ]
+        },
+        {
+          "title": "Facebook Open House Einladung",
+          "templates": [
+            "Hallo Petra,\n\nwir veranstalten in den nächsten Tagen ein kleines Open House.\n\nDabei geht es um Austausch, Erfahrungen und interessante Gespräche.\n\nWenn du Interesse hast, sende ich dir gerne die Informationen."
+          ]
+        },
+        {
+          "title": "Facebook Unternehmerabend Einladung",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nwir veranstalten regelmäßig kleine Unternehmerabende in Nordhessen.\n\nKein Verkauf. Kein Vortrag. Einfach Unternehmer im Austausch.\n\nWäre das interessant für Sie?"
+          ]
+        },
+        {
+          "title": "Facebook Empfehlungsanfrage",
+          "templates": [
+            "Thomas,\n\neine Frage habe ich noch:\n\nWer fällt dir spontan ein, der sich ebenfalls für Unternehmertum, persönliche Entwicklung oder zusätzliche Möglichkeiten interessiert?"
+          ]
+        },
+        {
+          "title": "Facebook Gesprächseinstieg",
+          "templates": [
+            "Darf ich dir eine persönliche Frage stellen?\n\nWenn du heute noch einmal neu starten könntest, würdest du denselben beruflichen Weg wählen?"
+          ]
+        },
+        {
+          "title": "Facebook Terminvereinbarung",
+          "templates": [
+            "Thomas,\n\nich glaube, ein kurzes Telefonat wäre einfacher als viele Nachrichten.\n\nWann passt es dir besser, Dienstag oder Mittwoch?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unternehmer_lib",
+      "title": "6. Unternehmer Bibliothek",
+      "navTitle": "6. Unternehmer Bibliothek",
+      "type": "content",
+      "tags": [
+        "Unternehmer",
+        "E-Mail",
+        "Vorlagen"
+      ],
+      "chapters": [
+        {
+          "title": "Unternehmer Erstanschreiben",
           "templates": [
             "Betreff: Kurzer Austausch unter Unternehmern?\n\nGuten Tag Herr Mustermann,\n\nich beschäftige mich seit vielen Jahren mit Vertrieb, Unternehmertum und Netzwerkaufbau.\n\nAktuell erweitere ich mein Unternehmernetzwerk in Nordhessen und tausche mich regelmäßig mit interessanten Unternehmern über aktuelle Entwicklungen aus.\n\nDeshalb wollte ich einmal unverbindlich Kontakt aufnehmen.\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "30-Tage-Nachfass-System",
-          "body": "Unternehmer, Interessenten, Empfehlungen, Bestandskunden und ehemalige Partner werden strukturiert nachgefasst. Tag 1, 3, 7, 14, 21, 30.",
+          "title": "Unternehmer Sicht auf Entwicklung",
           "templates": [
-            "Hallo Thomas,\n\nvielen Dank für das Gespräch.\n\nMich interessiert:\n\nWelcher Gedanke ist dir nach unserem Austausch am stärksten im Kopf geblieben?"
+            "Betreff: Ihre Sicht auf die aktuelle Entwicklung\n\nGuten Tag Herr Mustermann,\n\nmich interessiert aktuell besonders, wie Unternehmer die Veränderungen der letzten Jahre erleben.\n\nWelche Entwicklung beschäftigt Sie aktuell am stärksten?\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "Reaktivierungs- und Rückgewinnungssystem",
-          "body": "Ehemalige Vertriebspartner, alte Interessenten, Unternehmer, Bestandskunden und Empfehlungsgeber werden ohne Druck reaktiviert.",
+          "title": "Steuerberater E-Mail",
           "templates": [
-            "Hallo Thomas,\n\nich musste in den letzten Tagen an einige Menschen denken, mit denen ich früher zusammengearbeitet habe.\n\nDa bist auch du mir eingefallen.\n\nWie geht es dir aktuell?\n\nViele Grüße\nPeter"
+            "Betreff: Austausch über Unternehmerthemen\n\nGuten Tag Herr Mustermann,\n\nals Steuerberater begleiten Sie täglich Unternehmer aus unterschiedlichen Branchen.\n\nMich würde interessieren:\n\nWelche Herausforderungen begegnen Ihnen aktuell besonders häufig?\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "Premium-Gesprächsleitfäden",
-          "body": "Erstgespräch, Unternehmergespräch, Empfehlungsgebergespräch, Reaktivierungsgespräch, Partnergespräch, Entscheidungsgespräch und Abschlussformel.",
+          "title": "Versicherungsmakler E-Mail",
           "templates": [
-            "Was wäre aus deiner Sicht der nächste sinnvolle Schritt?"
+            "Betreff: Erfahrungsaustausch unter Selbständigen\n\nGuten Tag Herr Mustermann,\n\nVersicherungsmakler haben oft einen guten Überblick über die Sorgen und Wünsche ihrer Kunden.\n\nWelche Themen beschäftigen Ihre Kunden aktuell besonders häufig?\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "Video- und Sprachnachrichten-Bibliothek",
-          "body": "Persönliche Video- und Sprachnachrichten für alte Kontakte, ehemalige Interessenten, Unternehmer, Empfehlungen, Wohnmobilkontakte, Nachfassvideos und Partnerstart.",
+          "title": "Immobilienmakler E-Mail",
           "templates": [
-            "Hallo Thomas,\n\nich bin gerade meine Kontakte durchgegangen und dabei auf deinen Namen gestoßen.\n\nDa dachte ich mir: Bevor wieder Monate vergehen, melde ich mich einfach einmal persönlich.\n\nMich würde interessieren, wie es dir aktuell geht und was sich bei dir verändert hat.\n\nViele Grüße\nPeter"
+            "Betreff: Kurzer Unternehmeraustausch\n\nGuten Tag Herr Mustermann,\n\nich spreche regelmäßig mit Unternehmern aus Nordhessen über aktuelle Marktveränderungen.\n\nDa Sie täglich mit Menschen in wichtigen Lebenssituationen zu tun haben, würde mich Ihre Einschätzung interessieren.\n\nViele Grüße\nPeter Kücken"
           ]
         },
         {
-          "title": "Masterbibliothek Kampagnen",
-          "body": "WhatsApp-Status-Serien, Facebook-Story-Serien, LinkedIn-Beitragsserien, Unternehmer-Netzwerk-Kampagnen, Empfehlungskampagnen, Reaktivierungskampagnen, Jahreskampagnen 2026 und 2027."
+          "title": "Fitnessstudio E-Mail",
+          "templates": [
+            "Betreff: Gesundheit und Lebensqualität\n\nGuten Tag Herr Mustermann,\n\nGesundheit und Lebensqualität gewinnen immer mehr an Bedeutung.\n\nWelche Veränderungen beobachten Sie aktuell bei Ihren Mitgliedern?\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Wohnmobilhändler E-Mail",
+          "templates": [
+            "Betreff: Wohnmobilbranche im Wandel\n\nGuten Tag Herr Mustermann,\n\ndie Reisemobilbranche hat sich in den letzten Jahren stark verändert.\n\nDa ich selbst in der Wohnmobilwelt unterwegs bin, würde mich Ihre Sichtweise interessieren.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Küchenstudio E-Mail",
+          "templates": [
+            "Betreff: Kundenverhalten verändert sich\n\nGuten Tag Herr Mustermann,\n\nich tausche mich regelmäßig mit Unternehmern über Veränderungen im Kundenverhalten aus.\n\nWelche Entwicklung beobachten Sie aktuell am häufigsten?\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Handwerksbetrieb E-Mail",
+          "templates": [
+            "Betreff: Fachkräfte und Kundengewinnung\n\nGuten Tag Herr Mustermann,\n\nwelche Herausforderung beschäftigt Sie aktuell stärker:\n\nKundengewinnung oder Mitarbeitergewinnung?\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Gesundheitsbranche E-Mail",
+          "templates": [
+            "Betreff: Austausch zum Thema Gesundheit\n\nGuten Tag Herr Mustermann,\n\nGesundheit wird für viele Menschen immer wichtiger.\n\nWelche Entwicklung beobachten Sie aktuell besonders häufig?\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Unternehmer Nachfassen",
+          "templates": [
+            "Betreff: Kurze Rückfrage\n\nGuten Tag Herr Mustermann,\n\nich wollte mich noch einmal kurz melden.\n\nMich würde Ihre Einschätzung zu meiner letzten Frage interessieren.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Unternehmerfrühstück Einladung",
+          "templates": [
+            "Betreff: Einladung zum Unternehmerfrühstück\n\nGuten Tag Herr Mustermann,\n\neinmal im Monat treffen sich Unternehmer aus Nordhessen zu einem lockeren Austausch.\n\nKein Verkauf. Keine Präsentation. Nur Gespräche und neue Kontakte.\n\nWenn Sie Interesse haben, sende ich Ihnen gerne die Informationen.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Interviewanfrage Unternehmer",
+          "templates": [
+            "Betreff: Unternehmerinterview\n\nGuten Tag Herr Mustermann,\n\nich führe aktuell Gespräche mit interessanten Unternehmern aus Nordhessen.\n\nDabei geht es um Erfahrungen, Herausforderungen und Erkenntnisse.\n\nWären Sie grundsätzlich offen für ein solches Gespräch?\n\nViele Grüße\nPeter Kücken"
+          ]
         }
-      ],
-      "plainTitle": "Vorlagenbibliothek",
-      "navTitle": "3. Vorlagenbibliothek"
+      ]
     },
     {
-      "id": "e21",
-      "title": "4. Bestandskunden aktivieren",
+      "id": "empfehlungen_lib",
+      "title": "7. Empfehlungs Bibliothek",
+      "navTitle": "7. Empfehlungs Bibliothek",
       "type": "content",
       "tags": [
-        "Kunden",
-        "Premium"
+        "Empfehlungen",
+        "Vorlagen"
       ],
       "chapters": [
         {
-          "title": "Grundregel",
-          "body": "Ein Kunde ist kein Verkauf. Ein Kunde ist eine Beziehung. Nach dem Kauf beginnt die eigentliche Kundenpflege."
+          "title": "Drei-Namen-Methode",
+          "body": "Nicht fragen: Kennen Sie jemanden?\n\nBesser:\n\nWer aus Ihrer Familie?\nWer aus Ihrem Freundeskreis?\nWer aus Ihrem beruflichen Umfeld?\n\nSo entstehen konkrete Namen statt allgemeiner Aussagen."
         },
         {
-          "title": "Kundenwertformel",
-          "body": "1 Kunde → 3 Empfehlungen → 1 Neukunde → 1 möglicher Partner."
-        },
-        {
-          "title": "Servicegespräch 30 Tage",
+          "title": "Empfehlungsfrage Familie",
           "templates": [
-            "Guten Tag Frau Müller,\n\nhier ist Peter Kücken.\n\nSie nutzen Ihren HYLA jetzt seit einigen Wochen und ich wollte mich persönlich erkundigen, wie Ihre bisherigen Erfahrungen sind.",
-            "Was gefällt Ihnen bisher besonders gut?",
-            "Welche Funktionen nutzen Sie am häufigsten?",
-            "Welche Fragen sind noch offen?"
+            "Wer aus Ihrer Familie würde sich über diese Informationen freuen?"
+          ]
+        },
+        {
+          "title": "Empfehlungsfrage Freundeskreis",
+          "templates": [
+            "Wer aus Ihrem Freundeskreis legt besonderen Wert auf Gesundheit, Sauberkeit oder Lebensqualität?"
+          ]
+        },
+        {
+          "title": "Empfehlungsfrage Beruf",
+          "templates": [
+            "Wer aus Ihrem beruflichen Umfeld ist offen für neue Kontakte oder zusätzliche Möglichkeiten?"
+          ]
+        },
+        {
+          "title": "Empfehlung Gesundheit",
+          "templates": [
+            "Wer beschäftigt sich in Ihrem Umfeld besonders mit Gesundheit?"
+          ]
+        },
+        {
+          "title": "Empfehlung Haustiere",
+          "templates": [
+            "Wer hat Haustiere und legt großen Wert auf Sauberkeit?"
+          ]
+        },
+        {
+          "title": "Empfehlung Allergien",
+          "templates": [
+            "Wer spricht häufiger über Allergien, Hausstaub oder Raumluft?"
+          ]
+        },
+        {
+          "title": "Empfehlung Unternehmer",
+          "templates": [
+            "Wer ist selbständig oder Unternehmer und für gute Gespräche offen?"
+          ]
+        },
+        {
+          "title": "Empfehlung Zusatzeinkommen",
+          "templates": [
+            "Wer würde von zusätzlichen 500 bis 1.000 Euro monatlich profitieren?"
+          ]
+        },
+        {
+          "title": "Empfehlung Ruhestand",
+          "templates": [
+            "Wer möchte im Ruhestand aktiv bleiben und etwas Sinnvolles tun?"
+          ]
+        },
+        {
+          "title": "Kontaktfreigabe",
+          "templates": [
+            "Hallo Thomas,\n\nich habe heute ein interessantes Gespräch mit Peter Kücken geführt.\n\nDabei musste ich an dich denken.\n\nIch glaube, ihr solltet euch einmal kennenlernen.\n\nPeter wird sich in den nächsten Tagen bei dir melden.\n\nViele Grüße\nMax"
+          ]
+        },
+        {
+          "title": "Empfehlung nachfassen",
+          "templates": [
+            "Hallo Frau Müller,\n\nnoch einmal vielen Dank für Ihre Empfehlung.\n\nIch wollte Ihnen kurz sagen, dass ich mich bei Thomas gemeldet habe.\n\nIch halte Sie gerne auf dem Laufenden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kunden_lib",
+      "title": "8. Kundenservice Bibliothek",
+      "navTitle": "8. Kundenservice Bibliothek",
+      "type": "content",
+      "tags": [
+        "Kunden",
+        "Service"
+      ],
+      "chapters": [
+        {
+          "title": "30-Tage-Serviceanruf",
+          "templates": [
+            "Guten Tag Frau Müller,\n\nhier ist Peter Kücken.\n\nSie nutzen Ihren HYLA jetzt seit einigen Wochen und ich wollte mich persönlich erkundigen, wie Ihre bisherigen Erfahrungen sind.\n\nWas gefällt Ihnen bisher besonders gut?"
           ]
         },
         {
           "title": "6-Monats-Gespräch",
           "templates": [
-            "Hallo Frau Müller,\n\nich wollte mich einmal erkundigen, wie zufrieden Sie heute mit Ihrem HYLA sind.",
-            "Hat sich etwas in Ihrem Alltag verändert?",
-            "Nutzen Sie das Gerät regelmäßig?",
-            "Welche Vorteile bemerken Sie?"
+            "Hallo Frau Müller,\n\nich wollte mich einmal erkundigen, wie zufrieden Sie heute mit Ihrem HYLA sind.\n\nHat sich etwas in Ihrem Alltag verändert?\n\nWelche Vorteile bemerken Sie?"
           ]
         },
         {
@@ -204,264 +702,151 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
           ]
         },
         {
-          "title": "Empfehlungsanrufe",
+          "title": "Servicefrage Nutzung",
           "templates": [
-            "Wer fällt Ihnen spontan ein, der sich ebenfalls für Gesundheit und Lebensqualität interessiert?",
-            "Wer aus Ihrer Familie würde sich über diese Informationen freuen?",
-            "Wer aus Ihrem Freundeskreis legt besonderen Wert auf Sauberkeit?",
-            "Wer hat Haustiere?",
-            "Wer beschäftigt sich mit Allergien oder Raumluft?"
+            "Welche Funktionen nutzen Sie im Alltag am häufigsten?"
           ]
         },
         {
-          "title": "12-Monats-Kundenbindungsplan",
-          "body": "Januar Gruß. Februar Anruf. März Newsletter. April Serviceaktion. Mai Wohnmobil-Aktion. Juni Kundenabend. Juli Newsletter. August Empfehlungsaktion. September Open House. Oktober Servicegespräch. November Kundenumfrage. Dezember Weihnachtsgruß."
-        },
-        {
-          "title": "HYLA-Botschafterprogramm",
-          "body": "Botschafter sind begeisterte Kunden, die Empfehlungen geben und Veranstaltungen besuchen."
-        }
-      ],
-      "plainTitle": "Bestandskunden aktivieren",
-      "navTitle": "4. Bestandskunden aktivieren"
-    },
-    {
-      "id": "e22",
-      "title": "5. Empfehlungen gewinnen",
-      "type": "content",
-      "tags": [
-        "Empfehlungen",
-        "Premium"
-      ],
-      "chapters": [
-        {
-          "title": "Vorwort",
-          "body": "Empfehlungen enthalten bereits Vertrauen. Sie verkürzen Kennenlernen, Skepsis, Widerstand und Entscheidungszeit."
-        },
-        {
-          "title": "Drei-Namen-Methode",
-          "body": "Nicht fragen: Kennen Sie jemanden? Besser: Wer fällt Ihnen spontan ein? Danach Familie, Freundeskreis, berufliches Umfeld."
-        },
-        {
-          "title": "30 Empfehlungsfragen",
+          "title": "Servicefrage Unterstützung",
           "templates": [
-            "Wer beschäftigt sich in Ihrem Umfeld besonders mit Gesundheit?",
-            "Wer legt großen Wert auf ein sauberes Zuhause?",
-            "Wer spricht häufiger über Allergien oder Hausstaub?",
-            "Wer würde sich über bessere Raumluft freuen?",
-            "Wer achtet besonders auf Hygiene?",
-            "Wer hat kleine Kinder?",
-            "Wer hat Haustiere?",
-            "Wer renoviert gerade?",
-            "Wer zieht demnächst um?",
-            "Wer spricht häufig über Gesundheit?",
-            "Wer ist offen für neue Ideen?",
-            "Wer sucht aktuell nach zusätzlichen Möglichkeiten?",
-            "Wer ist selbständig oder Unternehmer?",
-            "Wer arbeitet im Vertrieb?",
-            "Wer hat ein großes Netzwerk?",
-            "Wer kennt besonders viele Menschen?",
-            "Wer spricht über steigende Lebenshaltungskosten?",
-            "Wer sucht nach finanzieller Sicherheit?",
-            "Wer würde gerne mehr Zeitfreiheit haben?",
-            "Wer hat Freude am Umgang mit Menschen?",
-            "Wer hilft anderen gerne?",
-            "Wer hat über Selbständigkeit nachgedacht?",
-            "Wer ist mit seiner Situation unzufrieden?",
-            "Wer spricht über Veränderungen?",
-            "Wer wäre offen für ein zweites Standbein?",
-            "Wer würde von zusätzlichen 500 bis 1.000 Euro monatlich profitieren?",
-            "Wer möchte im Ruhestand aktiv bleiben?",
-            "Wer ist kommunikativ?",
-            "Wer verfügt über viel Lebenserfahrung?",
-            "Wer wäre ein interessanter Gesprächspartner für mich?"
+            "Welche Funktionen nutzen Sie noch selten und wobei wünschen Sie sich Unterstützung?"
           ]
         },
         {
-          "title": "Kontaktfreigabe",
+          "title": "Bestandskunde Reaktivierung",
           "templates": [
-            "Hallo Thomas,\n\nich habe heute ein sehr interessantes Gespräch mit Peter Kücken geführt.\n\nDabei musste ich sofort an dich denken.\n\nIch glaube, ihr solltet euch unbedingt einmal kennenlernen.\n\nPeter wird sich in den nächsten Tagen bei dir melden.\n\nViele Grüße\nMax"
+            "Hallo Frau Müller,\n\nwir haben schon länger nicht miteinander gesprochen.\n\nDeshalb wollte ich hören, wie zufrieden Sie heute mit Ihrem HYLA sind."
           ]
         },
         {
-          "title": "Empfehlungs-Tracking",
-          "body": "Name, Empfehlungsgeber, Datum, Kontakt hergestellt, Gespräch geführt, Ergebnis."
-        },
-        {
-          "title": "Kücken-Empfehlungsformel",
-          "body": "Jeder Kunde, jeder Interessent, jeder Unternehmer, jeder Vertriebspartner und jedes Gespräch endet mit einer Empfehlungsfrage. Nicht aufdringlich. Sondern selbstverständlich."
-        }
-      ],
-      "plainTitle": "Empfehlungen gewinnen",
-      "navTitle": "5. Empfehlungen gewinnen"
-    },
-    {
-      "id": "e23",
-      "title": "6. Unternehmer-Netzwerk",
-      "type": "content",
-      "tags": [
-        "Unternehmer",
-        "Nordhessen",
-        "Premium"
-      ],
-      "chapters": [
-        {
-          "title": "Ziel",
-          "body": "Bis 31.12.2026: 100 Unternehmergespräche. Nicht 100 Präsentationen. Erst 100 Beziehungen."
-        },
-        {
-          "title": "A-B-C-Unternehmerliste",
-          "body": "A: Steuerberater, Finanzdienstleister, Immobilienmakler, Versicherungsmakler, Unternehmensberater, Personalberater. B: Handwerker, Gesundheitsanbieter, Fitnessstudios, Wohnmobilhändler, Küchenstudios, Raumausstatter. C: Einzelhandel, Gastronomie, Dienstleister."
-        },
-        {
-          "title": "20 Unternehmerfragen",
+          "title": "Kundenempfehlung",
           "templates": [
-            "Wie sind Sie zu Ihrem Unternehmen gekommen?",
-            "Was war Ihre größte Herausforderung?",
-            "Was würden Sie heute anders machen?",
-            "Welche Entwicklung beschäftigt Sie aktuell am stärksten?",
-            "Wo sehen Sie aktuell Chancen?",
-            "Wie gewinnen Sie aktuell Neukunden?",
-            "Welche Marketingmaßnahmen funktionieren gut?",
-            "Welche funktionieren schlecht?",
-            "Welche Veränderungen erwarten Sie in den nächsten fünf Jahren?",
-            "Wie hat sich Ihr Markt verändert?",
-            "Welche Eigenschaften machen Unternehmer erfolgreich?",
-            "Welche Fehler beobachten Sie häufig?",
-            "Wie finden Sie gute Mitarbeiter?",
-            "Was macht Ihnen aktuell am meisten Freude?",
-            "Was macht Ihnen aktuell Sorgen?",
-            "Wie sieht Ihr ideales Unternehmen aus?",
-            "Welche Ziele verfolgen Sie aktuell?",
-            "Wie wichtig sind Empfehlungen für Ihr Geschäft?",
-            "Mit welchen Unternehmern tauschen Sie sich regelmäßig aus?",
-            "Welche Unternehmer sollte ich unbedingt kennenlernen?"
+            "Sie kennen den HYLA inzwischen sehr gut.\n\nWer aus Ihrem Umfeld legt ebenfalls Wert auf Gesundheit, Sauberkeit und Lebensqualität?"
           ]
         },
         {
-          "title": "Unternehmerabend-System",
-          "body": "Kein Verkaufsabend. Ein Beziehungsabend mit Austausch, Sichtbarkeit, Empfehlungen und neuen Unternehmerkontakten."
+          "title": "Geburtstagsgruß Kunde",
+          "templates": [
+            "Liebe Frau Müller,\n\nich wünsche Ihnen von Herzen alles Gute zum Geburtstag.\n\nBleiben Sie gesund und genießen Sie Ihren Tag.\n\nViele Grüße\nPeter Kücken"
+          ]
         },
         {
-          "title": "Unternehmerclub Nordhessen",
-          "body": "Bis Ende 2026 einen Kreis von 25 bis 50 Unternehmern aufbauen. Netzwerkplattform, keine Verkaufsplattform."
+          "title": "Weihnachtsgruß Kunde",
+          "templates": [
+            "Liebe Frau Müller,\n\nvielen Dank für Ihr Vertrauen in diesem Jahr.\n\nIch wünsche Ihnen und Ihrer Familie eine schöne Weihnachtszeit und einen guten Start ins neue Jahr.\n\nViele Grüße\nPeter Kücken"
+          ]
         },
         {
-          "title": "-Erfolgsformel",
-          "body": "100 Unternehmergespräche → 300 Empfehlungen → 150 Folgegespräche → 50 Präsentationen → 20 Partner → langfristiges Wachstum."
+          "title": "VIP-Kunde Einladung",
+          "templates": [
+            "Hallo Frau Müller,\n\nwir laden ausgewählte Kunden zu einem kleinen Austausch ein.\n\nEs geht um Tipps, Erfahrungen und neue Anwendungsmöglichkeiten.\n\nWenn Sie mögen, sende ich Ihnen die Details."
+          ]
         }
-      ],
-      "plainTitle": "Unternehmer-Netzwerk",
-      "navTitle": "6. Unternehmer-Netzwerk"
+      ]
     },
     {
-      "id": "e25",
-      "title": "7. Personenmarke Peter Kücken",
-      "type": "content",
-      "tags": [
-        "Personenmarke",
-        "Premium"
-      ],
-      "chapters": [
-        {
-          "title": "Markenkern",
-          "body": "Peter Kücken ist Unternehmer, Praktiker, Mentor, Vertriebsexperte und Menschenkenner. Nicht Influencer, Motivationscoach oder Social-Media-Guru."
-        },
-        {
-          "title": "Zentrale Botschaft",
-          "body": "45 Jahre Erfahrung mit Menschen, Verkauf und Unternehmertum."
-        },
-        {
-          "title": "Fünf Hauptthemen",
-          "body": "Menschen, Vertrieb, Unternehmertum, Zusatzeinkommen, Lebenserfahrung."
-        },
-        {
-          "title": "Sichtbarkeitsformel",
-          "body": "Jede Woche 1 Hauptthema. Daraus entstehen LinkedIn-Beitrag, Facebook-Beitrag, Video und WhatsApp-Impuls."
-        },
-        {
-          "title": "Peter und Martina",
-          "body": "Peter steht für Unternehmertum. Martina steht für Lebenswirklichkeit. Gemeinsam entsteht Vertrauen, Alltag, Erfahrung und Lebensqualität."
-        }
-      ],
-      "plainTitle": "Personenmarke Peter Kücken",
-      "navTitle": "7. Personenmarke Peter Kücken"
-    },
-    {
-      "id": "e26",
-      "title": "8. Partnergewinnung",
-      "type": "content",
-      "tags": [
-        "Partnergewinnung",
-        "Premium"
-      ],
-      "chapters": [
-        {
-          "title": "Kücken-Rekrutierungsformel",
-          "body": "Sichtbarkeit → Kontakt → Gespräch → Vertrauen → Vorstellung → Begleitung → Start → Aktivität → Partner."
-        },
-        {
-          "title": "Zielgruppen-Matrix",
-          "body": "Unternehmer, Selbständige, Verkäufer, Angestellte mit Veränderungswunsch, Menschen 50 Plus, Bestandskunden, Empfehlungsgeber."
-        },
-        {
-          "title": "5-5-5-Regel",
-          "body": "Jeden Werktag 5 neue Kontakte, 5 bestehende Kontakte, 5 Nachfassgespräche."
-        },
-        {
-          "title": "Erstgespräch-System",
-          "body": "Ziel ist Verstehen. Vier Bereiche: Beruf, Familie, Ziele, Herausforderungen. 80 Prozent zuhören, 20 Prozent sprechen."
-        },
-        {
-          "title": "Erste sieben Tage",
-          "body": "Tag 1 Willkommen. Tag 2 eigene Geschichte. Tag 3 Kontaktliste. Tag 4 erste Gespräche. Tag 5 Begleitgespräch. Tag 6 erste Einladungen. Tag 7 Auswertung."
-        },
-        {
-          "title": "90-Tage-Plan",
-          "body": "Monat 1 lernen. Monat 2 anwenden. Monat 3 duplizieren."
-        },
-        {
-          "title": "Duplikationsformel",
-          "body": "Vormachen. Gemeinsam machen. Machen lassen."
-        },
-        {
-          "title": "Kennzahlen-Cockpit",
-          "body": "Wöchentlich: neue Kontakte, Gespräche, Termine, Präsentationen, Empfehlungen, Kunden, Partner."
-        }
-      ],
-      "plainTitle": "Partnergewinnung",
-      "navTitle": "8. Partnergewinnung"
-    },
-    {
-      "id": "e27",
-      "title": "9. Einwände sicher behandeln",
+      "id": "einwaende_lib",
+      "title": "9. Einwand Bibliothek",
+      "navTitle": "9. Einwand Bibliothek",
       "type": "content",
       "tags": [
         "Einwände",
-        "Premium"
+        "Antworten"
       ],
       "chapters": [
         {
-          "title": "Grundregel",
-          "body": "Einwand bedeutet nicht Nein. Einwand bedeutet oft: Ich brauche mehr Sicherheit."
-        },
-        {
-          "title": "Häufige Einwände",
+          "title": "Einwand: Keine Zeit",
           "templates": [
-            "Keine Zeit: Fehlt dir aktuell eher Zeit oder fehlt aktuell die Priorität?",
-            "Kein Geld: Geht es wirklich um Geld oder eher um Sicherheit?",
-            "Darüber nachdenken: Worüber genau möchtest du nachdenken?",
-            "Ich kenne niemanden: Wie viele Kontakte hast du in deinem Handy gespeichert?",
-            "Zu alt: Für was genau fühlst du dich zu alt?",
-            "Partner dagegen: Welche Fragen wird dein Partner vermutlich stellen?",
-            "Network Marketing funktioniert nicht: Welche Erfahrungen hast du persönlich gemacht?",
-            "Ich melde mich: Wann genau darf ich mich bei dir melden?",
-            "Schick mir Informationen: Welche Informationen interessieren dich besonders?",
-            "Ich bin nicht bereit: Was müsste passieren, damit du bereit bist?"
+            "Fehlt dir aktuell wirklich Zeit oder fehlt dem Thema im Moment noch die Priorität?"
           ]
         },
         {
-          "title": "7 stärkste Fragen",
+          "title": "Einwand: Kein Geld",
+          "templates": [
+            "Geht es wirklich um Geld oder eher um Sicherheit bei der Entscheidung?"
+          ]
+        },
+        {
+          "title": "Einwand: Darüber nachdenken",
+          "templates": [
+            "Worüber genau möchtest du nachdenken?"
+          ]
+        },
+        {
+          "title": "Einwand: Partner fragen",
+          "templates": [
+            "Welche Fragen wird dein Partner vermutlich stellen?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich kenne niemanden",
+          "templates": [
+            "Wie viele Kontakte hast du in deinem Handy gespeichert?"
+          ]
+        },
+        {
+          "title": "Einwand: Schlechte Erfahrungen",
+          "templates": [
+            "Was genau ist damals passiert?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich bin zu alt",
+          "templates": [
+            "Für was genau fühlst du dich zu alt?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich bin zu jung",
+          "templates": [
+            "Für was genau fühlst du dich zu jung?"
+          ]
+        },
+        {
+          "title": "Einwand: Network Marketing funktioniert nicht",
+          "templates": [
+            "Welche Erfahrungen hast du persönlich gemacht?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich melde mich",
+          "templates": [
+            "Wann genau darf ich mich bei dir melden, Dienstag oder Mittwoch?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich will niemanden nerven",
+          "templates": [
+            "Wenn du jemandem wirklich helfen könntest, wäre es fair, nichts zu sagen?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich bin nicht der Typ dafür",
+          "templates": [
+            "Wie müsste der ideale Typ dafür aussehen?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich habe Angst zu scheitern",
+          "templates": [
+            "Was wäre ein erster kleiner Schritt, der sich für dich gut anfühlt?"
+          ]
+        },
+        {
+          "title": "Einwand: Schick mir Informationen",
+          "templates": [
+            "Welche Informationen interessieren dich besonders?"
+          ]
+        },
+        {
+          "title": "Einwand: Ich bin noch nicht bereit",
+          "templates": [
+            "Was müsste passieren, damit du bereit bist?"
+          ]
+        },
+        {
+          "title": "7 stärkste Klärungsfragen",
           "templates": [
             "Was genau meinst du damit?",
             "Woran machst du das fest?",
@@ -472,13 +857,78 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
             "Was wäre der nächste sinnvolle Schritt?"
           ]
         }
+      ]
+    },
+    {
+      "id": "video_lib",
+      "title": "10. Video- und Sprachnachrichten Bibliothek",
+      "navTitle": "10. Video- und Sprachnachrichten Bibliothek",
+      "type": "content",
+      "tags": [
+        "Video",
+        "Audio"
       ],
-      "plainTitle": "Einwände sicher behandeln",
-      "navTitle": "9. Einwände sicher behandeln"
+      "chapters": [
+        {
+          "title": "Video alter Kontakt",
+          "templates": [
+            "Hallo Thomas,\n\nich bin gerade meine Kontakte durchgegangen und dabei auf deinen Namen gestoßen.\n\nDa dachte ich mir: Bevor wieder Monate vergehen, melde ich mich persönlich.\n\nMich würde interessieren, wie es dir aktuell geht und was sich bei dir verändert hat.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Video ehemaliger Interessent",
+          "templates": [
+            "Hallo Petra,\n\nwir hatten vor einiger Zeit einmal Kontakt.\n\nDeshalb wollte ich mich persönlich melden.\n\nMich würde interessieren, wie sich deine Situation seitdem entwickelt hat.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Video Unternehmer",
+          "templates": [
+            "Hallo Herr Mustermann,\n\nich spreche aktuell mit Unternehmern aus Nordhessen.\n\nMich interessiert besonders, welche Entwicklungen Unternehmer aktuell beschäftigen.\n\nDeshalb wollte ich mich einmal persönlich vorstellen.\n\nViele Grüße\nPeter Kücken"
+          ]
+        },
+        {
+          "title": "Video Empfehlung",
+          "templates": [
+            "Hallo Thomas,\n\ndein Name wurde mir empfohlen.\n\nDeshalb wollte ich mich nicht mit einer Standardnachricht melden, sondern persönlich.\n\nIch freue mich auf unseren Austausch.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Video Wohnmobilkontakt",
+          "templates": [
+            "Hallo Thomas,\n\nwir teilen die Leidenschaft für Wohnmobile.\n\nDeshalb wollte ich einfach einmal Hallo sagen und fragen:\n\nWelche Reise steht bei euch als Nächstes an?\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Nachfassvideo Tag 3",
+          "templates": [
+            "Hallo Thomas,\n\nich wollte mich kurz melden.\n\nVielleicht ist meine letzte Nachricht im Alltag etwas untergegangen.\n\nMich interessiert weiterhin deine Einschätzung.\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Nachfassvideo Tag 7",
+          "templates": [
+            "Hallo Thomas,\n\neine kurze persönliche Nachricht.\n\nMich würde interessieren:\n\nWelche Gedanken sind dir seit unserem letzten Austausch durch den Kopf gegangen?\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Empfehlungsvideo",
+          "templates": [
+            "Hallo Frau Müller,\n\nerst einmal vielen Dank für Ihr Vertrauen.\n\nEine Frage habe ich noch:\n\nWer fällt Ihnen spontan ein, der sich ebenfalls für diese Themen interessieren könnte?\n\nViele Grüße\nPeter"
+          ]
+        },
+        {
+          "title": "Partnerstart Sprachnachricht",
+          "templates": [
+            "Hallo Thomas,\n\nschön, dass du dabei bist.\n\nKonzentriere dich jetzt nicht auf alles gleichzeitig.\n\nWir gehen Schritt für Schritt vor.\n\nDer erste Schritt ist deine Kontaktliste."
+          ]
+        }
+      ]
     },
     {
       "id": "linkedin52",
-      "title": "10. LinkedIn Jahresplan",
+      "title": "11. LinkedIn Jahresplan",
+      "navTitle": "11. LinkedIn Jahresplan",
       "type": "content",
       "tags": [
         "LinkedIn",
@@ -488,322 +938,321 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
         {
           "title": "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe",
           "templates": [
-            "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich in 45 Jahren über Vertrauen gelernt habe ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich in 45 Jahren über Vertrauen gelernt habe ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 2: Warum Menschen heute anders entscheiden",
           "templates": [
-            "Woche 2: Warum Menschen heute anders entscheiden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Menschen heute anders entscheiden ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 2: Warum Menschen heute anders entscheiden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Menschen heute anders entscheiden ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 3: Mein größter Fehler im Vertrieb",
           "templates": [
-            "Woche 3: Mein größter Fehler im Vertrieb\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nMein größter Fehler im Vertrieb ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 3: Mein größter Fehler im Vertrieb\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nMein größter Fehler im Vertrieb ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken",
           "templates": [
-            "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 5: Was erfolgreiche Menschen anders machen",
           "templates": [
-            "Woche 5: Was erfolgreiche Menschen anders machen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas erfolgreiche Menschen anders machen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 5: Was erfolgreiche Menschen anders machen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas erfolgreiche Menschen anders machen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 6: Die wichtigste Entscheidung meines Berufslebens",
           "templates": [
-            "Woche 6: Die wichtigste Entscheidung meines Berufslebens\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wichtigste Entscheidung meines Berufslebens ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 6: Die wichtigste Entscheidung meines Berufslebens\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wichtigste Entscheidung meines Berufslebens ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 7: Warum Beständigkeit wichtiger ist als Motivation",
           "templates": [
-            "Woche 7: Warum Beständigkeit wichtiger ist als Motivation\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beständigkeit wichtiger ist als Motivation ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 7: Warum Beständigkeit wichtiger ist als Motivation\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beständigkeit wichtiger ist als Motivation ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 8: Was ich von Unternehmern gelernt habe",
           "templates": [
-            "Woche 8: Was ich von Unternehmern gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich von Unternehmern gelernt habe ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 8: Was ich von Unternehmern gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich von Unternehmern gelernt habe ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 9: Die größte Veränderung der letzten 20 Jahre",
           "templates": [
-            "Woche 9: Die größte Veränderung der letzten 20 Jahre\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie größte Veränderung der letzten 20 Jahre ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 9: Die größte Veränderung der letzten 20 Jahre\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie größte Veränderung der letzten 20 Jahre ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 10: Warum Vertrauen die neue Währung ist",
           "templates": [
-            "Woche 10: Warum Vertrauen die neue Währung ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Vertrauen die neue Währung ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 10: Warum Vertrauen die neue Währung ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Vertrauen die neue Währung ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 11: Was ich von meinen Kunden gelernt habe",
           "templates": [
-            "Woche 11: Was ich von meinen Kunden gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich von meinen Kunden gelernt habe ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 11: Was ich von meinen Kunden gelernt habe\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich von meinen Kunden gelernt habe ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 12: Die wertvollste Lektion meines Lebens",
           "templates": [
-            "Woche 12: Die wertvollste Lektion meines Lebens\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wertvollste Lektion meines Lebens ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 12: Die wertvollste Lektion meines Lebens\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wertvollste Lektion meines Lebens ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 13: Warum Verantwortung Freiheit schafft",
           "templates": [
-            "Woche 13: Warum Verantwortung Freiheit schafft\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Verantwortung Freiheit schafft ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 13: Warum Verantwortung Freiheit schafft\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Verantwortung Freiheit schafft ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 14: Die Kraft von Empfehlungen",
           "templates": [
-            "Woche 14: Die Kraft von Empfehlungen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft von Empfehlungen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 14: Die Kraft von Empfehlungen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft von Empfehlungen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 15: Warum Zuhören unterschätzt wird",
           "templates": [
-            "Woche 15: Warum Zuhören unterschätzt wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zuhören unterschätzt wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 15: Warum Zuhören unterschätzt wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zuhören unterschätzt wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 16: Warum Beständigkeit stärker ist als Talent",
           "templates": [
-            "Woche 16: Warum Beständigkeit stärker ist als Talent\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beständigkeit stärker ist als Talent ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 16: Warum Beständigkeit stärker ist als Talent\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beständigkeit stärker ist als Talent ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 17: Was Vertrauen wirklich bedeutet",
           "templates": [
-            "Woche 17: Was Vertrauen wirklich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Vertrauen wirklich bedeutet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 17: Was Vertrauen wirklich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Vertrauen wirklich bedeutet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 18: Die Bedeutung echter Gespräche",
           "templates": [
-            "Woche 18: Die Bedeutung echter Gespräche\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Bedeutung echter Gespräche ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 18: Die Bedeutung echter Gespräche\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Bedeutung echter Gespräche ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 19: Was Erfolg für mich heute bedeutet",
           "templates": [
-            "Woche 19: Was Erfolg für mich heute bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Erfolg für mich heute bedeutet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 19: Was Erfolg für mich heute bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Erfolg für mich heute bedeutet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 20: Warum Erfahrungen wertvoller werden",
           "templates": [
-            "Woche 20: Warum Erfahrungen wertvoller werden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Erfahrungen wertvoller werden ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 20: Warum Erfahrungen wertvoller werden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Erfahrungen wertvoller werden ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 21: Was gute Führung wirklich bedeutet",
           "templates": [
-            "Woche 21: Was gute Führung wirklich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas gute Führung wirklich bedeutet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 21: Was gute Führung wirklich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas gute Führung wirklich bedeutet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 22: Warum Entscheidungen unser Leben formen",
           "templates": [
-            "Woche 22: Warum Entscheidungen unser Leben formen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Entscheidungen unser Leben formen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 22: Warum Entscheidungen unser Leben formen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Entscheidungen unser Leben formen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 23: Warum Veränderung oft zuerst unbequem ist",
           "templates": [
-            "Woche 23: Warum Veränderung oft zuerst unbequem ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Veränderung oft zuerst unbequem ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 23: Warum Veränderung oft zuerst unbequem ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Veränderung oft zuerst unbequem ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 24: Der Mut, nicht allen gefallen zu müssen",
           "templates": [
-            "Woche 24: Der Mut, nicht allen gefallen zu müssen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDer Mut, nicht allen gefallen zu müssen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 24: Der Mut, nicht allen gefallen zu müssen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDer Mut, nicht allen gefallen zu müssen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 25: Was Lebensqualität wirklich ausmacht",
           "templates": [
-            "Woche 25: Was Lebensqualität wirklich ausmacht\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Lebensqualität wirklich ausmacht ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 25: Was Lebensqualität wirklich ausmacht\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Lebensqualität wirklich ausmacht ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 26: Warum Unternehmertum eine Haltung ist",
           "templates": [
-            "Woche 26: Warum Unternehmertum eine Haltung ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Unternehmertum eine Haltung ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 26: Warum Unternehmertum eine Haltung ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Unternehmertum eine Haltung ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 27: Die Kraft persönlicher Verantwortung",
           "templates": [
-            "Woche 27: Die Kraft persönlicher Verantwortung\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft persönlicher Verantwortung ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 27: Die Kraft persönlicher Verantwortung\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft persönlicher Verantwortung ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 28: Warum Netzwerke immer wichtiger werden",
           "templates": [
-            "Woche 28: Warum Netzwerke immer wichtiger werden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Netzwerke immer wichtiger werden ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 28: Warum Netzwerke immer wichtiger werden\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Netzwerke immer wichtiger werden ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 29: Warum Kommunikation über Erfolg entscheidet",
           "templates": [
-            "Woche 29: Warum Kommunikation über Erfolg entscheidet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Kommunikation über Erfolg entscheidet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 29: Warum Kommunikation über Erfolg entscheidet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Kommunikation über Erfolg entscheidet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 30: Warum die Zukunft menschlicher wird",
           "templates": [
-            "Woche 30: Warum die Zukunft menschlicher wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum die Zukunft menschlicher wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 30: Warum die Zukunft menschlicher wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum die Zukunft menschlicher wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 31: Was Rückschläge mich gelehrt haben",
           "templates": [
-            "Woche 31: Was Rückschläge mich gelehrt haben\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Rückschläge mich gelehrt haben ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 31: Was Rückschläge mich gelehrt haben\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Rückschläge mich gelehrt haben ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 32: Warum Ausdauer unterschätzt wird",
           "templates": [
-            "Woche 32: Warum Ausdauer unterschätzt wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Ausdauer unterschätzt wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 32: Warum Ausdauer unterschätzt wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Ausdauer unterschätzt wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 33: Warum Lernen nie aufhört",
           "templates": [
-            "Woche 33: Warum Lernen nie aufhört\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Lernen nie aufhört ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 33: Warum Lernen nie aufhört\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Lernen nie aufhört ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 34: Die Kraft der Dankbarkeit",
           "templates": [
-            "Woche 34: Die Kraft der Dankbarkeit\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft der Dankbarkeit ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 34: Die Kraft der Dankbarkeit\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kraft der Dankbarkeit ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 35: Warum Zeit unser wertvollstes Gut ist",
           "templates": [
-            "Woche 35: Warum Zeit unser wertvollstes Gut ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zeit unser wertvollstes Gut ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 35: Warum Zeit unser wertvollstes Gut ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zeit unser wertvollstes Gut ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 36: Was Freiheit für mich bedeutet",
           "templates": [
-            "Woche 36: Was Freiheit für mich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Freiheit für mich bedeutet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 36: Was Freiheit für mich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Freiheit für mich bedeutet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 37: Warum Gesundheit wichtiger wird",
           "templates": [
-            "Woche 37: Warum Gesundheit wichtiger wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Gesundheit wichtiger wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 37: Warum Gesundheit wichtiger wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Gesundheit wichtiger wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 38: Die Bedeutung von Prioritäten",
           "templates": [
-            "Woche 38: Die Bedeutung von Prioritäten\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Bedeutung von Prioritäten ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 38: Die Bedeutung von Prioritäten\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Bedeutung von Prioritäten ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 39: Charakter zeigt sich in schwierigen Zeiten",
           "templates": [
-            "Woche 39: Charakter zeigt sich in schwierigen Zeiten\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nCharakter zeigt sich in schwierigen Zeiten ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 39: Charakter zeigt sich in schwierigen Zeiten\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nCharakter zeigt sich in schwierigen Zeiten ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 40: Was wir am Ende wirklich hinterlassen",
           "templates": [
-            "Woche 40: Was wir am Ende wirklich hinterlassen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas wir am Ende wirklich hinterlassen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 40: Was wir am Ende wirklich hinterlassen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas wir am Ende wirklich hinterlassen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird",
           "templates": [
-            "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Menschlichkeit ein Wettbewerbsvorteil wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Menschlichkeit ein Wettbewerbsvorteil wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 42: Warum Beziehungen Vermögen sind",
           "templates": [
-            "Woche 42: Warum Beziehungen Vermögen sind\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beziehungen Vermögen sind ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 42: Warum Beziehungen Vermögen sind\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Beziehungen Vermögen sind ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 43: Warum Respekt wichtiger geworden ist",
           "templates": [
-            "Woche 43: Warum Respekt wichtiger geworden ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Respekt wichtiger geworden ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 43: Warum Respekt wichtiger geworden ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Respekt wichtiger geworden ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 44: Die Kunst, Menschen zu verstehen",
           "templates": [
-            "Woche 44: Die Kunst, Menschen zu verstehen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kunst, Menschen zu verstehen ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 44: Die Kunst, Menschen zu verstehen\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie Kunst, Menschen zu verstehen ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 45: Warum Erfahrung ihren Wert behält",
           "templates": [
-            "Woche 45: Warum Erfahrung ihren Wert behält\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Erfahrung ihren Wert behält ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 45: Warum Erfahrung ihren Wert behält\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Erfahrung ihren Wert behält ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 46: Warum Glück oft vorbereitet wird",
           "templates": [
-            "Woche 46: Warum Glück oft vorbereitet wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Glück oft vorbereitet wird ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 46: Warum Glück oft vorbereitet wird\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Glück oft vorbereitet wird ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 47: Was Erfüllung für mich bedeutet",
           "templates": [
-            "Woche 47: Was Erfüllung für mich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Erfüllung für mich bedeutet ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 47: Was Erfüllung für mich bedeutet\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas Erfüllung für mich bedeutet ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 48: Warum Zuhören eine Superkraft ist",
           "templates": [
-            "Woche 48: Warum Zuhören eine Superkraft ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zuhören eine Superkraft ist ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 48: Warum Zuhören eine Superkraft ist\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Zuhören eine Superkraft ist ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 49: Warum Verantwortung niemals aus der Mode kommt",
           "templates": [
-            "Woche 49: Warum Verantwortung niemals aus der Mode kommt\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Verantwortung niemals aus der Mode kommt ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 49: Warum Verantwortung niemals aus der Mode kommt\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWarum Verantwortung niemals aus der Mode kommt ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 50: Was ich heute jüngeren Menschen raten würde",
           "templates": [
-            "Woche 50: Was ich heute jüngeren Menschen raten würde\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich heute jüngeren Menschen raten würde ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 50: Was ich heute jüngeren Menschen raten würde\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nWas ich heute jüngeren Menschen raten würde ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren",
           "templates": [
-            "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wichtigste Erkenntnis aus 45 Jahren ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nDie wichtigste Erkenntnis aus 45 Jahren ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         },
         {
           "title": "Woche 52: Ein Blick nach vorne",
           "templates": [
-            "Woche 52: Ein Blick nach vorne\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nEin Blick nach vorne ist kein theoretisches Thema. Es zeigt sich in echten Gesprächen, in Entscheidungen, in Rückschlägen und in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien oft zeitlos bleiben: zuhören, Vertrauen aufbauen, Verantwortung übernehmen, beständig handeln und Menschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
+            "Woche 52: Ein Blick nach vorne\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich gelernt:\n\nEin Blick nach vorne ist kein theoretisches Thema.\n\nEs zeigt sich in echten Gesprächen.\nEs zeigt sich in Entscheidungen.\nEs zeigt sich in Rückschlägen.\nUnd es zeigt sich in Beziehungen.\n\nViele Menschen suchen heute nach schnellen Lösungen. Ich glaube, dass die wichtigsten Prinzipien zeitlos bleiben:\n\nZuhören.\nVertrauen aufbauen.\nVerantwortung übernehmen.\nBeständig handeln.\nMenschen ernst nehmen.\n\nGenau diese Erfahrungen möchte ich weitergeben.\n\nMich interessiert:\n\nWelche Erfahrung haben Sie zu diesem Thema gemacht?"
           ]
         }
-      ],
-      "plainTitle": "LinkedIn Jahresplan",
-      "navTitle": "10. LinkedIn Jahresplan"
+      ]
     },
     {
       "id": "facebook52",
-      "title": "11. Facebook Jahresplan",
+      "title": "12. Facebook Jahresplan",
+      "navTitle": "12. Facebook Jahresplan",
       "type": "content",
       "tags": [
         "Facebook",
@@ -813,322 +1262,321 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
         {
           "title": "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe",
           "templates": [
-            "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich in 45 Jahren über Vertrauen gelernt habe hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 1: Was ich in 45 Jahren über Vertrauen gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich in 45 Jahren über Vertrauen gelernt habe hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 2: Warum Menschen heute anders entscheiden",
           "templates": [
-            "Woche 2: Warum Menschen heute anders entscheiden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Menschen heute anders entscheiden hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 2: Warum Menschen heute anders entscheiden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Menschen heute anders entscheiden hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 3: Mein größter Fehler im Vertrieb",
           "templates": [
-            "Woche 3: Mein größter Fehler im Vertrieb\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nMein größter Fehler im Vertrieb hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 3: Mein größter Fehler im Vertrieb\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nMein größter Fehler im Vertrieb hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken",
           "templates": [
-            "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 4: Warum Beziehungen wichtiger sind als Verkaufstechniken\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 5: Was erfolgreiche Menschen anders machen",
           "templates": [
-            "Woche 5: Was erfolgreiche Menschen anders machen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas erfolgreiche Menschen anders machen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 5: Was erfolgreiche Menschen anders machen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas erfolgreiche Menschen anders machen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 6: Die wichtigste Entscheidung meines Berufslebens",
           "templates": [
-            "Woche 6: Die wichtigste Entscheidung meines Berufslebens\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wichtigste Entscheidung meines Berufslebens hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 6: Die wichtigste Entscheidung meines Berufslebens\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wichtigste Entscheidung meines Berufslebens hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 7: Warum Beständigkeit wichtiger ist als Motivation",
           "templates": [
-            "Woche 7: Warum Beständigkeit wichtiger ist als Motivation\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beständigkeit wichtiger ist als Motivation hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 7: Warum Beständigkeit wichtiger ist als Motivation\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beständigkeit wichtiger ist als Motivation hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 8: Was ich von Unternehmern gelernt habe",
           "templates": [
-            "Woche 8: Was ich von Unternehmern gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich von Unternehmern gelernt habe hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 8: Was ich von Unternehmern gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich von Unternehmern gelernt habe hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 9: Die größte Veränderung der letzten 20 Jahre",
           "templates": [
-            "Woche 9: Die größte Veränderung der letzten 20 Jahre\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie größte Veränderung der letzten 20 Jahre hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 9: Die größte Veränderung der letzten 20 Jahre\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie größte Veränderung der letzten 20 Jahre hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 10: Warum Vertrauen die neue Währung ist",
           "templates": [
-            "Woche 10: Warum Vertrauen die neue Währung ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Vertrauen die neue Währung ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 10: Warum Vertrauen die neue Währung ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Vertrauen die neue Währung ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 11: Was ich von meinen Kunden gelernt habe",
           "templates": [
-            "Woche 11: Was ich von meinen Kunden gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich von meinen Kunden gelernt habe hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 11: Was ich von meinen Kunden gelernt habe\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich von meinen Kunden gelernt habe hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 12: Die wertvollste Lektion meines Lebens",
           "templates": [
-            "Woche 12: Die wertvollste Lektion meines Lebens\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wertvollste Lektion meines Lebens hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 12: Die wertvollste Lektion meines Lebens\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wertvollste Lektion meines Lebens hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 13: Warum Verantwortung Freiheit schafft",
           "templates": [
-            "Woche 13: Warum Verantwortung Freiheit schafft\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Verantwortung Freiheit schafft hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 13: Warum Verantwortung Freiheit schafft\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Verantwortung Freiheit schafft hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 14: Die Kraft von Empfehlungen",
           "templates": [
-            "Woche 14: Die Kraft von Empfehlungen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft von Empfehlungen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 14: Die Kraft von Empfehlungen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft von Empfehlungen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 15: Warum Zuhören unterschätzt wird",
           "templates": [
-            "Woche 15: Warum Zuhören unterschätzt wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zuhören unterschätzt wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 15: Warum Zuhören unterschätzt wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zuhören unterschätzt wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 16: Warum Beständigkeit stärker ist als Talent",
           "templates": [
-            "Woche 16: Warum Beständigkeit stärker ist als Talent\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beständigkeit stärker ist als Talent hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 16: Warum Beständigkeit stärker ist als Talent\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beständigkeit stärker ist als Talent hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 17: Was Vertrauen wirklich bedeutet",
           "templates": [
-            "Woche 17: Was Vertrauen wirklich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Vertrauen wirklich bedeutet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 17: Was Vertrauen wirklich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Vertrauen wirklich bedeutet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 18: Die Bedeutung echter Gespräche",
           "templates": [
-            "Woche 18: Die Bedeutung echter Gespräche\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Bedeutung echter Gespräche hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 18: Die Bedeutung echter Gespräche\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Bedeutung echter Gespräche hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 19: Was Erfolg für mich heute bedeutet",
           "templates": [
-            "Woche 19: Was Erfolg für mich heute bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Erfolg für mich heute bedeutet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 19: Was Erfolg für mich heute bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Erfolg für mich heute bedeutet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 20: Warum Erfahrungen wertvoller werden",
           "templates": [
-            "Woche 20: Warum Erfahrungen wertvoller werden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Erfahrungen wertvoller werden hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 20: Warum Erfahrungen wertvoller werden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Erfahrungen wertvoller werden hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 21: Was gute Führung wirklich bedeutet",
           "templates": [
-            "Woche 21: Was gute Führung wirklich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas gute Führung wirklich bedeutet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 21: Was gute Führung wirklich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas gute Führung wirklich bedeutet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 22: Warum Entscheidungen unser Leben formen",
           "templates": [
-            "Woche 22: Warum Entscheidungen unser Leben formen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Entscheidungen unser Leben formen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 22: Warum Entscheidungen unser Leben formen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Entscheidungen unser Leben formen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 23: Warum Veränderung oft zuerst unbequem ist",
           "templates": [
-            "Woche 23: Warum Veränderung oft zuerst unbequem ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Veränderung oft zuerst unbequem ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 23: Warum Veränderung oft zuerst unbequem ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Veränderung oft zuerst unbequem ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 24: Der Mut, nicht allen gefallen zu müssen",
           "templates": [
-            "Woche 24: Der Mut, nicht allen gefallen zu müssen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDer Mut, nicht allen gefallen zu müssen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 24: Der Mut, nicht allen gefallen zu müssen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDer Mut, nicht allen gefallen zu müssen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 25: Was Lebensqualität wirklich ausmacht",
           "templates": [
-            "Woche 25: Was Lebensqualität wirklich ausmacht\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Lebensqualität wirklich ausmacht hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 25: Was Lebensqualität wirklich ausmacht\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Lebensqualität wirklich ausmacht hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 26: Warum Unternehmertum eine Haltung ist",
           "templates": [
-            "Woche 26: Warum Unternehmertum eine Haltung ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Unternehmertum eine Haltung ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 26: Warum Unternehmertum eine Haltung ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Unternehmertum eine Haltung ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 27: Die Kraft persönlicher Verantwortung",
           "templates": [
-            "Woche 27: Die Kraft persönlicher Verantwortung\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft persönlicher Verantwortung hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 27: Die Kraft persönlicher Verantwortung\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft persönlicher Verantwortung hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 28: Warum Netzwerke immer wichtiger werden",
           "templates": [
-            "Woche 28: Warum Netzwerke immer wichtiger werden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Netzwerke immer wichtiger werden hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 28: Warum Netzwerke immer wichtiger werden\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Netzwerke immer wichtiger werden hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 29: Warum Kommunikation über Erfolg entscheidet",
           "templates": [
-            "Woche 29: Warum Kommunikation über Erfolg entscheidet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Kommunikation über Erfolg entscheidet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 29: Warum Kommunikation über Erfolg entscheidet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Kommunikation über Erfolg entscheidet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 30: Warum die Zukunft menschlicher wird",
           "templates": [
-            "Woche 30: Warum die Zukunft menschlicher wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum die Zukunft menschlicher wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 30: Warum die Zukunft menschlicher wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum die Zukunft menschlicher wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 31: Was Rückschläge mich gelehrt haben",
           "templates": [
-            "Woche 31: Was Rückschläge mich gelehrt haben\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Rückschläge mich gelehrt haben hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 31: Was Rückschläge mich gelehrt haben\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Rückschläge mich gelehrt haben hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 32: Warum Ausdauer unterschätzt wird",
           "templates": [
-            "Woche 32: Warum Ausdauer unterschätzt wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Ausdauer unterschätzt wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 32: Warum Ausdauer unterschätzt wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Ausdauer unterschätzt wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 33: Warum Lernen nie aufhört",
           "templates": [
-            "Woche 33: Warum Lernen nie aufhört\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Lernen nie aufhört hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 33: Warum Lernen nie aufhört\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Lernen nie aufhört hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 34: Die Kraft der Dankbarkeit",
           "templates": [
-            "Woche 34: Die Kraft der Dankbarkeit\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft der Dankbarkeit hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 34: Die Kraft der Dankbarkeit\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kraft der Dankbarkeit hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 35: Warum Zeit unser wertvollstes Gut ist",
           "templates": [
-            "Woche 35: Warum Zeit unser wertvollstes Gut ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zeit unser wertvollstes Gut ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 35: Warum Zeit unser wertvollstes Gut ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zeit unser wertvollstes Gut ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 36: Was Freiheit für mich bedeutet",
           "templates": [
-            "Woche 36: Was Freiheit für mich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Freiheit für mich bedeutet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 36: Was Freiheit für mich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Freiheit für mich bedeutet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 37: Warum Gesundheit wichtiger wird",
           "templates": [
-            "Woche 37: Warum Gesundheit wichtiger wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Gesundheit wichtiger wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 37: Warum Gesundheit wichtiger wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Gesundheit wichtiger wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 38: Die Bedeutung von Prioritäten",
           "templates": [
-            "Woche 38: Die Bedeutung von Prioritäten\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Bedeutung von Prioritäten hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 38: Die Bedeutung von Prioritäten\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Bedeutung von Prioritäten hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 39: Charakter zeigt sich in schwierigen Zeiten",
           "templates": [
-            "Woche 39: Charakter zeigt sich in schwierigen Zeiten\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nCharakter zeigt sich in schwierigen Zeiten hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 39: Charakter zeigt sich in schwierigen Zeiten\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nCharakter zeigt sich in schwierigen Zeiten hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 40: Was wir am Ende wirklich hinterlassen",
           "templates": [
-            "Woche 40: Was wir am Ende wirklich hinterlassen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas wir am Ende wirklich hinterlassen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 40: Was wir am Ende wirklich hinterlassen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas wir am Ende wirklich hinterlassen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird",
           "templates": [
-            "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Menschlichkeit ein Wettbewerbsvorteil wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Menschlichkeit ein Wettbewerbsvorteil wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 42: Warum Beziehungen Vermögen sind",
           "templates": [
-            "Woche 42: Warum Beziehungen Vermögen sind\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beziehungen Vermögen sind hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 42: Warum Beziehungen Vermögen sind\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Beziehungen Vermögen sind hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 43: Warum Respekt wichtiger geworden ist",
           "templates": [
-            "Woche 43: Warum Respekt wichtiger geworden ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Respekt wichtiger geworden ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 43: Warum Respekt wichtiger geworden ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Respekt wichtiger geworden ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 44: Die Kunst, Menschen zu verstehen",
           "templates": [
-            "Woche 44: Die Kunst, Menschen zu verstehen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kunst, Menschen zu verstehen hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 44: Die Kunst, Menschen zu verstehen\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie Kunst, Menschen zu verstehen hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 45: Warum Erfahrung ihren Wert behält",
           "templates": [
-            "Woche 45: Warum Erfahrung ihren Wert behält\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Erfahrung ihren Wert behält hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 45: Warum Erfahrung ihren Wert behält\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Erfahrung ihren Wert behält hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 46: Warum Glück oft vorbereitet wird",
           "templates": [
-            "Woche 46: Warum Glück oft vorbereitet wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Glück oft vorbereitet wird hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 46: Warum Glück oft vorbereitet wird\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Glück oft vorbereitet wird hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 47: Was Erfüllung für mich bedeutet",
           "templates": [
-            "Woche 47: Was Erfüllung für mich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Erfüllung für mich bedeutet hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 47: Was Erfüllung für mich bedeutet\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas Erfüllung für mich bedeutet hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 48: Warum Zuhören eine Superkraft ist",
           "templates": [
-            "Woche 48: Warum Zuhören eine Superkraft ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zuhören eine Superkraft ist hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 48: Warum Zuhören eine Superkraft ist\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Zuhören eine Superkraft ist hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 49: Warum Verantwortung niemals aus der Mode kommt",
           "templates": [
-            "Woche 49: Warum Verantwortung niemals aus der Mode kommt\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Verantwortung niemals aus der Mode kommt hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 49: Warum Verantwortung niemals aus der Mode kommt\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWarum Verantwortung niemals aus der Mode kommt hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 50: Was ich heute jüngeren Menschen raten würde",
           "templates": [
-            "Woche 50: Was ich heute jüngeren Menschen raten würde\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich heute jüngeren Menschen raten würde hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 50: Was ich heute jüngeren Menschen raten würde\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nWas ich heute jüngeren Menschen raten würde hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren",
           "templates": [
-            "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wichtigste Erkenntnis aus 45 Jahren hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 51: Die wichtigste Erkenntnis aus 45 Jahren\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nDie wichtigste Erkenntnis aus 45 Jahren hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         },
         {
           "title": "Woche 52: Ein Blick nach vorne",
           "templates": [
-            "Woche 52: Ein Blick nach vorne\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nEin Blick nach vorne hat mich in vielen Situationen begleitet. In Gesprächen mit Kunden, Unternehmern, Freunden und Vertriebspartnern habe ich immer wieder erlebt, wie wichtig Menschlichkeit, Vertrauen und ehrliche Beziehungen sind.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte. Sie erinnern sich daran, wie man sie behandelt hat.\n\nWie siehst du das?"
+            "Woche 52: Ein Blick nach vorne\n\nWenn ich auf mein Leben und meine Arbeit mit Menschen zurückblicke, dann berührt mich dieses Thema besonders.\n\nEin Blick nach vorne hat mich in vielen Situationen begleitet.\n\nIn Gesprächen mit Kunden.\nIn Gesprächen mit Unternehmern.\nIn Gesprächen mit Freunden.\nUnd auch in Gesprächen mit Vertriebspartnern.\n\nAm Ende erinnern sich Menschen selten an perfekte Worte.\n\nSie erinnern sich daran, wie man sie behandelt hat.\n\nDeshalb glaube ich, dass Menschlichkeit, Vertrauen und ehrliche Beziehungen wichtiger werden.\n\nWie siehst du das?"
           ]
         }
-      ],
-      "plainTitle": "Facebook Jahresplan",
-      "navTitle": "11. Facebook Jahresplan"
+      ]
     },
     {
       "id": "videos52",
-      "title": "12. Video Jahresplan",
+      "title": "13. Video Jahresplan",
+      "navTitle": "13. Video Jahresplan",
       "type": "content",
       "tags": [
         "Video",
@@ -1138,322 +1586,321 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
         {
           "title": "Video 1: Was ich in 45 Jahren über Vertrauen gelernt habe",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was ich in 45 Jahren über Vertrauen gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas ich in 45 Jahren über Vertrauen gelernt habe ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 1: Was ich in 45 Jahren über Vertrauen gelernt habe\n\nHOOK\n\nHeute geht es um: Was ich in 45 Jahren über Vertrauen gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas ich in 45 Jahren über Vertrauen gelernt habe ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 2: Mein größter Fehler im Vertrieb",
+          "title": "Video 2: Warum Menschen heute anders entscheiden",
           "templates": [
-            "HOOK\n\nHeute geht es um: Mein größter Fehler im Vertrieb.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nMein größter Fehler im Vertrieb ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 2: Warum Menschen heute anders entscheiden\n\nHOOK\n\nHeute geht es um: Warum Menschen heute anders entscheiden.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Menschen heute anders entscheiden ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 3: Warum Beziehungen wichtiger sind als Verkaufstechniken",
+          "title": "Video 3: Mein größter Fehler im Vertrieb",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Beziehungen wichtiger sind als Verkaufstechniken.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 3: Mein größter Fehler im Vertrieb\n\nHOOK\n\nHeute geht es um: Mein größter Fehler im Vertrieb.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nMein größter Fehler im Vertrieb ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 4: Was erfolgreiche Menschen anders machen",
+          "title": "Video 4: Warum Beziehungen wichtiger sind als Verkaufstechniken",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was erfolgreiche Menschen anders machen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas erfolgreiche Menschen anders machen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 4: Warum Beziehungen wichtiger sind als Verkaufstechniken\n\nHOOK\n\nHeute geht es um: Warum Beziehungen wichtiger sind als Verkaufstechniken.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Beziehungen wichtiger sind als Verkaufstechniken ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 5: Die wichtigste Entscheidung meines Lebens",
+          "title": "Video 5: Was erfolgreiche Menschen anders machen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die wichtigste Entscheidung meines Lebens.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie wichtigste Entscheidung meines Lebens ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 5: Was erfolgreiche Menschen anders machen\n\nHOOK\n\nHeute geht es um: Was erfolgreiche Menschen anders machen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas erfolgreiche Menschen anders machen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 6: Warum Beständigkeit wichtiger ist als Motivation",
+          "title": "Video 6: Die wichtigste Entscheidung meines Berufslebens",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Beständigkeit wichtiger ist als Motivation.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Beständigkeit wichtiger ist als Motivation ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 6: Die wichtigste Entscheidung meines Berufslebens\n\nHOOK\n\nHeute geht es um: Die wichtigste Entscheidung meines Berufslebens.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie wichtigste Entscheidung meines Berufslebens ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 7: Was ich von Unternehmern gelernt habe",
+          "title": "Video 7: Warum Beständigkeit wichtiger ist als Motivation",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was ich von Unternehmern gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas ich von Unternehmern gelernt habe ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 7: Warum Beständigkeit wichtiger ist als Motivation\n\nHOOK\n\nHeute geht es um: Warum Beständigkeit wichtiger ist als Motivation.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Beständigkeit wichtiger ist als Motivation ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 8: Die größte Veränderung der letzten 20 Jahre",
+          "title": "Video 8: Was ich von Unternehmern gelernt habe",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die größte Veränderung der letzten 20 Jahre.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie größte Veränderung der letzten 20 Jahre ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 8: Was ich von Unternehmern gelernt habe\n\nHOOK\n\nHeute geht es um: Was ich von Unternehmern gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas ich von Unternehmern gelernt habe ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 9: Warum Vertrauen die neue Währung ist",
+          "title": "Video 9: Die größte Veränderung der letzten 20 Jahre",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Vertrauen die neue Währung ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Vertrauen die neue Währung ist ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 9: Die größte Veränderung der letzten 20 Jahre\n\nHOOK\n\nHeute geht es um: Die größte Veränderung der letzten 20 Jahre.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie größte Veränderung der letzten 20 Jahre ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 10: Was ich von meinen Kunden gelernt habe",
+          "title": "Video 10: Warum Vertrauen die neue Währung ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was ich von meinen Kunden gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas ich von meinen Kunden gelernt habe ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 10: Warum Vertrauen die neue Währung ist\n\nHOOK\n\nHeute geht es um: Warum Vertrauen die neue Währung ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Vertrauen die neue Währung ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 11: Die wertvollste Lektion meines Lebens",
+          "title": "Video 11: Was ich von meinen Kunden gelernt habe",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die wertvollste Lektion meines Lebens.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie wertvollste Lektion meines Lebens ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 11: Was ich von meinen Kunden gelernt habe\n\nHOOK\n\nHeute geht es um: Was ich von meinen Kunden gelernt habe.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas ich von meinen Kunden gelernt habe ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 12: Warum Verantwortung Freiheit schafft",
+          "title": "Video 12: Die wertvollste Lektion meines Lebens",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Verantwortung Freiheit schafft.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Verantwortung Freiheit schafft ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 12: Die wertvollste Lektion meines Lebens\n\nHOOK\n\nHeute geht es um: Die wertvollste Lektion meines Lebens.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie wertvollste Lektion meines Lebens ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 13: Die Kraft von Empfehlungen",
+          "title": "Video 13: Warum Verantwortung Freiheit schafft",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Kraft von Empfehlungen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Kraft von Empfehlungen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 13: Warum Verantwortung Freiheit schafft\n\nHOOK\n\nHeute geht es um: Warum Verantwortung Freiheit schafft.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Verantwortung Freiheit schafft ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 14: Warum Zuhören unterschätzt wird",
+          "title": "Video 14: Die Kraft von Empfehlungen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Zuhören unterschätzt wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Zuhören unterschätzt wird ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 14: Die Kraft von Empfehlungen\n\nHOOK\n\nHeute geht es um: Die Kraft von Empfehlungen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Kraft von Empfehlungen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 15: Warum Beständigkeit Talent schlägt",
+          "title": "Video 15: Warum Zuhören unterschätzt wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Beständigkeit Talent schlägt.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Beständigkeit Talent schlägt ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 15: Warum Zuhören unterschätzt wird\n\nHOOK\n\nHeute geht es um: Warum Zuhören unterschätzt wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Zuhören unterschätzt wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 16: Was Vertrauen wirklich bedeutet",
+          "title": "Video 16: Warum Beständigkeit stärker ist als Talent",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Vertrauen wirklich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Vertrauen wirklich bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 16: Warum Beständigkeit stärker ist als Talent\n\nHOOK\n\nHeute geht es um: Warum Beständigkeit stärker ist als Talent.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Beständigkeit stärker ist als Talent ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 17: Die Bedeutung echter Gespräche",
+          "title": "Video 17: Was Vertrauen wirklich bedeutet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Bedeutung echter Gespräche.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Bedeutung echter Gespräche ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 17: Was Vertrauen wirklich bedeutet\n\nHOOK\n\nHeute geht es um: Was Vertrauen wirklich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Vertrauen wirklich bedeutet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 18: Was Erfolg heute für mich bedeutet",
+          "title": "Video 18: Die Bedeutung echter Gespräche",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Erfolg heute für mich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Erfolg heute für mich bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 18: Die Bedeutung echter Gespräche\n\nHOOK\n\nHeute geht es um: Die Bedeutung echter Gespräche.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Bedeutung echter Gespräche ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 19: Warum Erfahrungen wertvoller werden",
+          "title": "Video 19: Was Erfolg für mich heute bedeutet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Erfahrungen wertvoller werden.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Erfahrungen wertvoller werden ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 19: Was Erfolg für mich heute bedeutet\n\nHOOK\n\nHeute geht es um: Was Erfolg für mich heute bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Erfolg für mich heute bedeutet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 20: Was gute Führung wirklich bedeutet",
+          "title": "Video 20: Warum Erfahrungen wertvoller werden",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was gute Führung wirklich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas gute Führung wirklich bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 20: Warum Erfahrungen wertvoller werden\n\nHOOK\n\nHeute geht es um: Warum Erfahrungen wertvoller werden.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Erfahrungen wertvoller werden ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 21: Warum Entscheidungen unser Leben formen",
+          "title": "Video 21: Was gute Führung wirklich bedeutet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Entscheidungen unser Leben formen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Entscheidungen unser Leben formen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 21: Was gute Führung wirklich bedeutet\n\nHOOK\n\nHeute geht es um: Was gute Führung wirklich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas gute Führung wirklich bedeutet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 22: Warum Veränderung selten bequem ist",
+          "title": "Video 22: Warum Entscheidungen unser Leben formen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Veränderung selten bequem ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Veränderung selten bequem ist ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 22: Warum Entscheidungen unser Leben formen\n\nHOOK\n\nHeute geht es um: Warum Entscheidungen unser Leben formen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Entscheidungen unser Leben formen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 23: Der Mut, den eigenen Weg zu gehen",
+          "title": "Video 23: Warum Veränderung oft zuerst unbequem ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Der Mut, den eigenen Weg zu gehen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDer Mut, den eigenen Weg zu gehen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 23: Warum Veränderung oft zuerst unbequem ist\n\nHOOK\n\nHeute geht es um: Warum Veränderung oft zuerst unbequem ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Veränderung oft zuerst unbequem ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 24: Was Lebensqualität wirklich bedeutet",
+          "title": "Video 24: Der Mut, nicht allen gefallen zu müssen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Lebensqualität wirklich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Lebensqualität wirklich bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 24: Der Mut, nicht allen gefallen zu müssen\n\nHOOK\n\nHeute geht es um: Der Mut, nicht allen gefallen zu müssen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDer Mut, nicht allen gefallen zu müssen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 25: Warum Unternehmertum eine Denkweise ist",
+          "title": "Video 25: Was Lebensqualität wirklich ausmacht",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Unternehmertum eine Denkweise ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Unternehmertum eine Denkweise ist ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 25: Was Lebensqualität wirklich ausmacht\n\nHOOK\n\nHeute geht es um: Was Lebensqualität wirklich ausmacht.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Lebensqualität wirklich ausmacht ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 26: Die Kraft persönlicher Verantwortung",
+          "title": "Video 26: Warum Unternehmertum eine Haltung ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Kraft persönlicher Verantwortung.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Kraft persönlicher Verantwortung ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 26: Warum Unternehmertum eine Haltung ist\n\nHOOK\n\nHeute geht es um: Warum Unternehmertum eine Haltung ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Unternehmertum eine Haltung ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 27: Warum Netzwerke immer wichtiger werden",
+          "title": "Video 27: Die Kraft persönlicher Verantwortung",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Netzwerke immer wichtiger werden.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Netzwerke immer wichtiger werden ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 27: Die Kraft persönlicher Verantwortung\n\nHOOK\n\nHeute geht es um: Die Kraft persönlicher Verantwortung.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Kraft persönlicher Verantwortung ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 28: Warum Kommunikation über Erfolg entscheidet",
+          "title": "Video 28: Warum Netzwerke immer wichtiger werden",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Kommunikation über Erfolg entscheidet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Kommunikation über Erfolg entscheidet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 28: Warum Netzwerke immer wichtiger werden\n\nHOOK\n\nHeute geht es um: Warum Netzwerke immer wichtiger werden.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Netzwerke immer wichtiger werden ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 29: Warum die Zukunft menschlicher wird",
+          "title": "Video 29: Warum Kommunikation über Erfolg entscheidet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum die Zukunft menschlicher wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum die Zukunft menschlicher wird ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 29: Warum Kommunikation über Erfolg entscheidet\n\nHOOK\n\nHeute geht es um: Warum Kommunikation über Erfolg entscheidet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Kommunikation über Erfolg entscheidet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 30: Was Rückschläge mich gelehrt haben",
+          "title": "Video 30: Warum die Zukunft menschlicher wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Rückschläge mich gelehrt haben.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Rückschläge mich gelehrt haben ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 30: Warum die Zukunft menschlicher wird\n\nHOOK\n\nHeute geht es um: Warum die Zukunft menschlicher wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum die Zukunft menschlicher wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 31: Warum Ausdauer oft wichtiger ist als Talent",
+          "title": "Video 31: Was Rückschläge mich gelehrt haben",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Ausdauer oft wichtiger ist als Talent.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Ausdauer oft wichtiger ist als Talent ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 31: Was Rückschläge mich gelehrt haben\n\nHOOK\n\nHeute geht es um: Was Rückschläge mich gelehrt haben.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Rückschläge mich gelehrt haben ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 32: Warum Lernen niemals endet",
+          "title": "Video 32: Warum Ausdauer unterschätzt wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Lernen niemals endet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Lernen niemals endet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 32: Warum Ausdauer unterschätzt wird\n\nHOOK\n\nHeute geht es um: Warum Ausdauer unterschätzt wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Ausdauer unterschätzt wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 33: Die Kraft der Dankbarkeit",
+          "title": "Video 33: Warum Lernen nie aufhört",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Kraft der Dankbarkeit.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Kraft der Dankbarkeit ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 33: Warum Lernen nie aufhört\n\nHOOK\n\nHeute geht es um: Warum Lernen nie aufhört.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Lernen nie aufhört ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 34: Warum Zeit unser wertvollster Besitz ist",
+          "title": "Video 34: Die Kraft der Dankbarkeit",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Zeit unser wertvollster Besitz ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Zeit unser wertvollster Besitz ist ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 34: Die Kraft der Dankbarkeit\n\nHOOK\n\nHeute geht es um: Die Kraft der Dankbarkeit.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Kraft der Dankbarkeit ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 35: Was Freiheit für mich heute bedeutet",
+          "title": "Video 35: Warum Zeit unser wertvollstes Gut ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Freiheit für mich heute bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Freiheit für mich heute bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 35: Warum Zeit unser wertvollstes Gut ist\n\nHOOK\n\nHeute geht es um: Warum Zeit unser wertvollstes Gut ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Zeit unser wertvollstes Gut ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 36: Warum Gesundheit alles verändert",
+          "title": "Video 36: Was Freiheit für mich bedeutet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Gesundheit alles verändert.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Gesundheit alles verändert ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 36: Was Freiheit für mich bedeutet\n\nHOOK\n\nHeute geht es um: Was Freiheit für mich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Freiheit für mich bedeutet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 37: Die Macht klarer Prioritäten",
+          "title": "Video 37: Warum Gesundheit wichtiger wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Macht klarer Prioritäten.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Macht klarer Prioritäten ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 37: Warum Gesundheit wichtiger wird\n\nHOOK\n\nHeute geht es um: Warum Gesundheit wichtiger wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Gesundheit wichtiger wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 38: Charakter zeigt sich in schwierigen Zeiten",
+          "title": "Video 38: Die Bedeutung von Prioritäten",
           "templates": [
-            "HOOK\n\nHeute geht es um: Charakter zeigt sich in schwierigen Zeiten.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nCharakter zeigt sich in schwierigen Zeiten ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 38: Die Bedeutung von Prioritäten\n\nHOOK\n\nHeute geht es um: Die Bedeutung von Prioritäten.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Bedeutung von Prioritäten ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 39: Was wir wirklich hinterlassen",
+          "title": "Video 39: Charakter zeigt sich in schwierigen Zeiten",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was wir wirklich hinterlassen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas wir wirklich hinterlassen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 39: Charakter zeigt sich in schwierigen Zeiten\n\nHOOK\n\nHeute geht es um: Charakter zeigt sich in schwierigen Zeiten.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nCharakter zeigt sich in schwierigen Zeiten ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 40: Warum Menschlichkeit immer wichtiger wird",
+          "title": "Video 40: Was wir am Ende wirklich hinterlassen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Menschlichkeit immer wichtiger wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Menschlichkeit immer wichtiger wird ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 40: Was wir am Ende wirklich hinterlassen\n\nHOOK\n\nHeute geht es um: Was wir am Ende wirklich hinterlassen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas wir am Ende wirklich hinterlassen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 41: Warum Beziehungen das größte Vermögen sind",
+          "title": "Video 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Beziehungen das größte Vermögen sind.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Beziehungen das größte Vermögen sind ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 41: Warum Menschlichkeit ein Wettbewerbsvorteil wird\n\nHOOK\n\nHeute geht es um: Warum Menschlichkeit ein Wettbewerbsvorteil wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Menschlichkeit ein Wettbewerbsvorteil wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 42: Warum Respekt immer aktuell bleibt",
+          "title": "Video 42: Warum Beziehungen Vermögen sind",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Respekt immer aktuell bleibt.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Respekt immer aktuell bleibt ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 42: Warum Beziehungen Vermögen sind\n\nHOOK\n\nHeute geht es um: Warum Beziehungen Vermögen sind.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Beziehungen Vermögen sind ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 43: Die Kunst, Menschen zu verstehen",
+          "title": "Video 43: Warum Respekt wichtiger geworden ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die Kunst, Menschen zu verstehen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie Kunst, Menschen zu verstehen ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 43: Warum Respekt wichtiger geworden ist\n\nHOOK\n\nHeute geht es um: Warum Respekt wichtiger geworden ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Respekt wichtiger geworden ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 44: Warum Erfahrung ihren Wert behält",
+          "title": "Video 44: Die Kunst, Menschen zu verstehen",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Erfahrung ihren Wert behält.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Erfahrung ihren Wert behält ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 44: Die Kunst, Menschen zu verstehen\n\nHOOK\n\nHeute geht es um: Die Kunst, Menschen zu verstehen.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie Kunst, Menschen zu verstehen ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 45: Warum Glück oft vorbereitet wird",
+          "title": "Video 45: Warum Erfahrung ihren Wert behält",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Glück oft vorbereitet wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Glück oft vorbereitet wird ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 45: Warum Erfahrung ihren Wert behält\n\nHOOK\n\nHeute geht es um: Warum Erfahrung ihren Wert behält.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Erfahrung ihren Wert behält ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 46: Was Erfüllung für mich bedeutet",
+          "title": "Video 46: Warum Glück oft vorbereitet wird",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was Erfüllung für mich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas Erfüllung für mich bedeutet ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 46: Warum Glück oft vorbereitet wird\n\nHOOK\n\nHeute geht es um: Warum Glück oft vorbereitet wird.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Glück oft vorbereitet wird ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 47: Warum Zuhören eine Superkraft ist",
+          "title": "Video 47: Was Erfüllung für mich bedeutet",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Zuhören eine Superkraft ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Zuhören eine Superkraft ist ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 47: Was Erfüllung für mich bedeutet\n\nHOOK\n\nHeute geht es um: Was Erfüllung für mich bedeutet.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas Erfüllung für mich bedeutet ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 48: Warum Verantwortung nie aus der Mode kommt",
+          "title": "Video 48: Warum Zuhören eine Superkraft ist",
           "templates": [
-            "HOOK\n\nHeute geht es um: Warum Verantwortung nie aus der Mode kommt.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWarum Verantwortung nie aus der Mode kommt ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 48: Warum Zuhören eine Superkraft ist\n\nHOOK\n\nHeute geht es um: Warum Zuhören eine Superkraft ist.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Zuhören eine Superkraft ist ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 49: Was ich jungen Menschen heute raten würde",
+          "title": "Video 49: Warum Verantwortung niemals aus der Mode kommt",
           "templates": [
-            "HOOK\n\nHeute geht es um: Was ich jungen Menschen heute raten würde.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nWas ich jungen Menschen heute raten würde ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 49: Warum Verantwortung niemals aus der Mode kommt\n\nHOOK\n\nHeute geht es um: Warum Verantwortung niemals aus der Mode kommt.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWarum Verantwortung niemals aus der Mode kommt ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 50: Die wichtigste Erkenntnis aus 45 Jahren",
+          "title": "Video 50: Was ich heute jüngeren Menschen raten würde",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die wichtigste Erkenntnis aus 45 Jahren.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie wichtigste Erkenntnis aus 45 Jahren ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 50: Was ich heute jüngeren Menschen raten würde\n\nHOOK\n\nHeute geht es um: Was ich heute jüngeren Menschen raten würde.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nWas ich heute jüngeren Menschen raten würde ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 51: Ein Blick nach vorne",
+          "title": "Video 51: Die wichtigste Erkenntnis aus 45 Jahren",
           "templates": [
-            "HOOK\n\nHeute geht es um: Ein Blick nach vorne.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nEin Blick nach vorne ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 51: Die wichtigste Erkenntnis aus 45 Jahren\n\nHOOK\n\nHeute geht es um: Die wichtigste Erkenntnis aus 45 Jahren.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis aus 45 Jahren ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         },
         {
-          "title": "Video 52: Die 10 wichtigsten Lektionen meines Lebens",
+          "title": "Video 52: Ein Blick nach vorne",
           "templates": [
-            "HOOK\n\nHeute geht es um: Die 10 wichtigsten Lektionen meines Lebens.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden. Menschen reagieren auf Ehrlichkeit, Klarheit, Beständigkeit und echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird. Es geht um Menschen, Vertrauen, Verantwortung und den Mut, weiterzugehen.\n\nERKENNTNIS\n\nDie wichtigste Erkenntnis lautet:\n\nDie 10 wichtigsten Lektionen meines Lebens ist kein Schlagwort. Es ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen. Und aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
+            "Video 52: Ein Blick nach vorne\n\nHOOK\n\nHeute geht es um: Ein Blick nach vorne.\n\nHAUPTTEIL\n\nNach über 45 Jahren mit Menschen, Verkauf und Unternehmertum habe ich zu diesem Thema viele Erfahrungen gesammelt.\n\nIch habe erlebt, dass Menschen nicht durch perfekte Worte überzeugt werden.\n\nMenschen reagieren auf Ehrlichkeit.\nAuf Klarheit.\nAuf Beständigkeit.\nUnd auf echtes Interesse.\n\nDieses Thema begleitet mich, weil es in fast jedem guten Gespräch sichtbar wird.\n\nERKENNTNIS\n\nEin Blick nach vorne ist kein Schlagwort.\n\nEs ist etwas, das man im Alltag lebt.\n\nABSCHLUSS\n\nWenn wir Menschen ernst nehmen, zuhören und verlässlich bleiben, entstehen Beziehungen.\n\nUnd aus Beziehungen entstehen Chancen.\n\nCTA\n\nWelche Erfahrung hast du mit diesem Thema gemacht?"
           ]
         }
-      ],
-      "plainTitle": "Video Jahresplan",
-      "navTitle": "12. Video Jahresplan"
+      ]
     },
     {
       "id": "kennzahlen",
-      "title": "13. Kennzahlen",
+      "title": "14. Kennzahlen",
+      "navTitle": "14. Kennzahlen",
       "type": "kpi",
       "tags": [
         "Controlling"
@@ -1469,13 +1916,12 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
         "Kundenkontakte",
         "Videos",
         "Beiträge"
-      ],
-      "plainTitle": "Kennzahlen",
-      "navTitle": "13. Kennzahlen"
+      ]
     },
     {
       "id": "github",
-      "title": "14. GitHub Anleitung",
+      "title": "15. GitHub Anleitung",
+      "navTitle": "15. GitHub Anleitung",
       "type": "content",
       "tags": [
         "GitHub"
@@ -1483,15 +1929,13 @@ Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
       "chapters": [
         {
           "title": "Update einspielen",
-          "body": "ZIP entpacken. index.html, style.css, app.js, content.js und README.md in dein bestehendes GitHub-Repository hochladen. Vorhandene Dateien ersetzen. Commit changes klicken."
+          "body": "ZIP entpacken. index.html, app.js, content.js, style.css und README.md in dein bestehendes GitHub-Repository hochladen. Vorhandene Dateien ersetzen. Commit changes klicken."
         },
         {
           "title": "Wichtig",
           "body": "Die Dateien müssen direkt im Hauptordner liegen. Nicht in einem Unterordner. Die Startdatei muss exakt index.html heißen. Danach mit Strg + F5 neu laden."
         }
-      ],
-      "plainTitle": "GitHub Anleitung",
-      "navTitle": "14. GitHub Anleitung"
+      ]
     }
   ]
 };
