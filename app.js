@@ -119,6 +119,16 @@ function statusText(actual,target){const p=pct(actual,target); if(p>=100)return 
 function esc(str){return String(str ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function formatDate(date){const [y,m,d]=date.split('-'); return `${d}.${m}.${y}`}
 
+
+function scrollToContent(){
+  const content = document.querySelector('.content');
+  if(content){
+    content.scrollIntoView({behavior:'smooth', block:'start'});
+  }else{
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+}
+
 function renderNav(){
   nav.innerHTML='';
   window.APP_CONTENT.sections.forEach(s=>{
@@ -145,7 +155,7 @@ function render(){
 
 function go(id){
   current=id; selectedChapterIndex=null; searchInput.value=''; render();
-  setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),0);
+  setTimeout(()=>scrollToContent(),0);
 }
 
 /* Arbeitscockpit */
@@ -266,7 +276,7 @@ function renderActivityHistory(){
     ${dates.map(d=>{
       const p=sumActivity('peter',[d]), m=sumActivity('martina',[d]);
       const total=pct(p.actual+m.actual,p.target+m.target);
-      return `<tr><td><button class="link-button" onclick="selectedDate='${d}'; render(); window.scrollTo({top:0,behavior:'smooth'})">${formatDate(d)}</button></td><td class="${ampClass(p.percent)}">${p.percent}%</td><td class="${ampClass(m.percent)}">${m.percent}%</td><td class="${ampClass(total)}">${total}%</td></tr>`;
+      return `<tr><td><button class="link-button" onclick="selectedDate='${d}'; render(); scrollToContent()">${formatDate(d)}</button></td><td class="${ampClass(p.percent)}">${p.percent}%</td><td class="${ampClass(m.percent)}">${m.percent}%</td><td class="${ampClass(total)}">${total}%</td></tr>`;
     }).join('')}</tbody></table></div></div>`;
 }
 
@@ -391,7 +401,7 @@ function renderSalesHistory(){
       verkaeufe:Number(sales[d].peter?.verkaeufe||0)+Number(sales[d].martina?.verkaeufe||0),
       partner:Number(sales[d].peter?.partner||0)+Number(sales[d].martina?.partner||0)
     };
-    return `<tr><td><button class="link-button" onclick="selectedSalesDate='${d}'; render(); window.scrollTo({top:0,behavior:'smooth'})">${formatDate(d)}</button></td><td>${round(row.kontakte)}</td><td>${round(row.gespraeche)}</td><td>${round(row.termine)}</td><td>${round(row.praesentationen)}</td><td>${round(row.verkaeufe)}</td><td>${round(row.partner)}</td></tr>`;
+    return `<tr><td><button class="link-button" onclick="selectedSalesDate='${d}'; render(); scrollToContent()">${formatDate(d)}</button></td><td>${round(row.kontakte)}</td><td>${round(row.gespraeche)}</td><td>${round(row.termine)}</td><td>${round(row.praesentationen)}</td><td>${round(row.verkaeufe)}</td><td>${round(row.partner)}</td></tr>`;
   }).join('')}</tbody></table></div></div>`;
 }
 
@@ -399,8 +409,8 @@ function renderSalesHistory(){
 function renderLinks(s){
   view.innerHTML=`<div class="card"><h2>${esc(s.title)}</h2><p>Direkter Einstieg in die wichtigsten Bereiche.</p></div><div class="link-grid">${(s.links||[]).map(l=>`<button class="link-card" onclick="go('${l.target}')">${esc(l.label)}</button>`).join('')}</div>${renderProgressOverview()}`;
 }
-function openChapter(idx){selectedChapterIndex=idx; render(); setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),0)}
-function backToOverview(){selectedChapterIndex=null; render(); setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),0)}
+function openChapter(idx){selectedChapterIndex=idx; render(); setTimeout(()=>scrollToContent(),0)}
+function backToOverview(){selectedChapterIndex=null; render(); setTimeout(()=>scrollToContent(),0)}
 function renderContent(s){
   const chapters=s.chapters||[];
   if(selectedChapterIndex!==null && chapters[selectedChapterIndex]) return renderSingleChapter(s,chapters[selectedChapterIndex],selectedChapterIndex);
@@ -453,7 +463,7 @@ function renderSearch(q){
   selectedChapterIndex=null; let hits=[];
   window.APP_CONTENT.sections.forEach(s=>{(s.chapters||[]).forEach((c,idx)=>{if(JSON.stringify(c).toLowerCase().includes(q)||s.title.toLowerCase().includes(q))hits.push({section:s,chapter:c,idx})})});
   let html=`<div class="card"><h2>Suche</h2><p>${hits.length} Treffer für „${esc(q)}“</p></div>`;
-  hits.slice(0,150).forEach(h=>{html+=`<div class="card"><h3>${esc(h.section.title)}: ${esc(h.chapter.title)}</h3><button class="copy-btn" onclick="current='${h.section.id}'; searchInput.value=''; selectedChapterIndex=${h.idx}; render(); window.scrollTo({top:0,behavior:'smooth'});">Eintrag öffnen</button></div>`});
+  hits.slice(0,150).forEach(h=>{html+=`<div class="card"><h3>${esc(h.section.title)}: ${esc(h.chapter.title)}</h3><button class="copy-btn" onclick="current='${h.section.id}'; searchInput.value=''; selectedChapterIndex=${h.idx}; render(); scrollToContent();">Eintrag öffnen</button></div>`});
   view.innerHTML=html;
 }
 

@@ -15,3 +15,10 @@ Version 18
   - Grün ab 100 Prozent
   - Gelb von 80 bis 99 Prozent
   - Rot unter 80 Prozent
+
+
+## Version 19
+
+- Handyversion optimiert.
+- Klick auf einen Hauptpunkt im Inhaltsverzeichnis springt direkt zum geöffneten Kapitelinhalt.
+- Desktop-Verhalten bleibt erhalten.
