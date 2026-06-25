@@ -41,6 +41,184 @@ const activityConfig={
   ]
 };
 
+
+const fieldHelp = {
+  peter: {
+    whatsapp_kontakte: {
+      goal: "Jeden Tag neue Gespräche über WhatsApp starten.",
+      counts: "Neue Kontakte anschreiben, Rückmeldungen beantworten und Gespräche beginnen.",
+      notCounts: "Status posten, Nachrichten nur lesen oder Gruppenbeiträge ohne persönliches Gespräch.",
+      actionLow: "Gehe dein Telefonbuch durch, aktiviere alte Kontakte, schreibe Empfehlungen an und starte 5 persönliche Nachrichten.",
+      actionOk: "Ziel erreicht. Vereinbare jetzt Termine oder plane konkrete Nachfassungen.",
+      focus: "Peter nutzt WhatsApp vor allem für direkte Kontakte, alte Bekanntschaften, Empfehlungen und schnelle Terminvereinbarungen."
+    },
+    whatsapp_nachfassungen: {
+      goal: "Bestehende Kontakte weiterentwickeln.",
+      counts: "Erinnerung senden, offene Frage klären, Termin anbieten oder Rückmeldung zum letzten Gespräch einholen.",
+      notCounts: "Nur Emoji senden oder ohne klare Frage schreiben.",
+      actionLow: "Öffne deine letzten Chats und fasse 5 offene Gespräche nach. Frage konkret nach dem nächsten Schritt.",
+      actionOk: "Ziel erreicht. Prüfe, welche Nachfassungen nun zu Terminen werden können.",
+      focus: "Peter nutzt Nachfassungen, um Gespräche nicht versanden zu lassen."
+    },
+    facebook_kontakte: {
+      goal: "Neue Gespräche über Facebook aufbauen.",
+      counts: "Sinnvoll kommentieren, Freundschaftsanfrage senden, persönliche Nachricht starten.",
+      notCounts: "Nur scrollen, nur liken oder Beiträge lesen.",
+      actionLow: "Kommentiere bei 5 passenden Kontakten und schreibe 3 persönliche Nachrichten.",
+      actionOk: "Ziel erreicht. Entwickle die Kontakte in private Gespräche weiter.",
+      focus: "Peter nutzt Facebook für persönliche Sichtbarkeit und warme Kontakte."
+    },
+    linkedin_kontakte: {
+      goal: "Unternehmer und Selbständige erreichen.",
+      counts: "Kontaktanfragen, Kommentare bei Unternehmern, private Erstnachrichten.",
+      notCounts: "Nur Profilbesuche oder passives Lesen.",
+      actionLow: "Suche Selbständige, Geschäftsführer und Inhaber im Raum Kassel plus 50 km. Sende 5 Kontaktanfragen.",
+      actionOk: "Ziel erreicht. Starte jetzt aus den neuen Kontakten echte Gespräche.",
+      focus: "Peter nutzt LinkedIn gezielt für Unternehmer, Inhaber, Geschäftsführer und Entscheider."
+    },
+    unternehmerkontakte: {
+      goal: "Echte Unternehmergespräche anstoßen.",
+      counts: "Telefonat, Nachricht, persönlicher Kontakt oder Terminvereinbarung mit Unternehmern.",
+      notCounts: "Nur Liste erstellen oder Website anschauen.",
+      actionLow: "Wähle 5 regionale Unternehmer aus und kontaktiere mindestens 3 davon persönlich.",
+      actionOk: "Ziel erreicht. Frage nach Empfehlungen zu weiteren Unternehmern.",
+      focus: "Peter fokussiert Handwerk, Mittelstand, Dienstleister und Unternehmernetzwerke."
+    },
+    empfehlungen: {
+      goal: "Aktiv neue Namen und Kontakte erhalten.",
+      counts: "Konkrete Empfehlungsfrage stellen und Name oder Kontakt erhalten.",
+      notCounts: "Nur allgemein über Empfehlungen sprechen.",
+      actionLow: "Stelle heute mindestens 3 konkrete Empfehlungsfragen: Wer fällt dir spontan ein?",
+      actionOk: "Ziel erreicht. Sorge jetzt für Kontaktfreigabe und Termin.",
+      focus: "Peter fragt nach Unternehmern, Selbständigen, Vertrieblern und Menschen mit Veränderungswunsch."
+    },
+    beitraege: {
+      goal: "Sichtbarkeit aufbauen.",
+      counts: "LinkedIn-, Facebook- oder WhatsApp-Beitrag veröffentlicht.",
+      notCounts: "Nur Entwurf schreiben.",
+      actionLow: "Wähle einen fertigen Beitrag aus dem Jahresplan und veröffentliche ihn heute.",
+      actionOk: "Ziel erreicht. Beobachte Reaktionen und starte Gespräche aus Kommentaren.",
+      focus: "Peter veröffentlicht Erfahrung, Unternehmertum und Menschlichkeit."
+    },
+    videos: {
+      goal: "Persönlichkeit sichtbar machen.",
+      counts: "Video aufgenommen oder veröffentlicht.",
+      notCounts: "Nur über Video nachdenken.",
+      actionLow: "Nimm ein 2-Minuten-Video aus dem Video-Jahresplan auf. Perfektion ist nicht das Ziel.",
+      actionOk: "Ziel erreicht. Teile das Video zusätzlich im WhatsApp-Status.",
+      focus: "Peter nutzt Videos für Vertrauen, Erfahrung und persönliche Nähe."
+    }
+  },
+  martina: {
+    kontakte: {
+      goal: "Persönliche Gespräche starten.",
+      counts: "Neue oder bestehende Kontakte anschreiben, Rückmeldungen beantworten, Gespräch beginnen.",
+      notCounts: "Nur lesen oder Status anschauen.",
+      actionLow: "Schreibe 3 persönliche Kontakte an. Nutze Alltag, Interesse und Beziehung als Einstieg.",
+      actionOk: "Ziel erreicht. Prüfe, welche Kontakte für Kundenpflege oder Empfehlungen geeignet sind.",
+      focus: "Martina nutzt Kontakte für persönliche Nähe und alltagsnahe Gespräche."
+    },
+    kundenkontakte: {
+      goal: "Bestandskunden pflegen und reaktivieren.",
+      counts: "Serviceanruf, WhatsApp-Nachricht, Rückfrage zur Nutzung, Einladung zum Austausch.",
+      notCounts: "Nur Kundendaten ansehen.",
+      actionLow: "Wähle 3 Kunden aus und frage nach Zufriedenheit, Nutzung und offenen Fragen.",
+      actionOk: "Ziel erreicht. Frage bei zufriedenen Kunden nach Empfehlungen.",
+      focus: "Martina fokussiert Bestandskunden, Empfehlungsgeber und Interessenten."
+    },
+    nachfassungen: {
+      goal: "Offene Gespräche weiterführen.",
+      counts: "Klare Nachfrage, Terminfrage, Erinnerung oder nächste Entscheidung anstoßen.",
+      notCounts: "Nur belanglos melden ohne Richtung.",
+      actionLow: "Öffne 3 offene Chats und frage: Was ist aus deiner Sicht der nächste sinnvolle Schritt?",
+      actionOk: "Ziel erreicht. Plane die nächste Wiedervorlage.",
+      focus: "Martina nutzt Nachfassungen freundlich, ruhig und verbindlich."
+    },
+    facebook_aktivitaet: {
+      goal: "Sichtbarkeit und Beziehung über Facebook stärken.",
+      counts: "Beitrag, Story, Kommentar oder persönlicher Messenger-Einstieg.",
+      notCounts: "Nur scrollen oder fremde Beiträge lesen.",
+      actionLow: "Poste eine persönliche Beobachtung oder kommentiere bei 5 passenden Kontakten.",
+      actionOk: "Ziel erreicht. Starte aus Reaktionen persönliche Gespräche.",
+      focus: "Martina zeigt Alltag, Lebenserfahrung, gemeinsame Entwicklung und Zusatzeinkommen."
+    },
+    empfehlungen: {
+      goal: "Neue Kontakte aus bestehenden Beziehungen erhalten.",
+      counts: "Konkrete Frage stellen und Namen oder Kontakt erhalten.",
+      notCounts: "Nur hoffen, dass jemand empfiehlt.",
+      actionLow: "Frage 2 zufriedene Kunden oder Bekannte: Wer fällt dir spontan ein?",
+      actionOk: "Ziel erreicht. Bitte um kurze Kontaktfreigabe.",
+      focus: "Martina fragt besonders bei Kunden, Bekannten und Menschen mit Vertrauen."
+    },
+    beitraege: {
+      goal: "Regelmäßig sichtbar bleiben.",
+      counts: "Facebook-, WhatsApp- oder LinkedIn-Beitrag veröffentlicht.",
+      notCounts: "Nur Entwurf schreiben.",
+      actionLow: "Veröffentliche einen kurzen Beitrag aus Alltag, Erfahrung oder Kundenpflege.",
+      actionOk: "Ziel erreicht. Beobachte Reaktionen und antworte persönlich.",
+      focus: "Martina postet alltagsnah, menschlich und glaubwürdig."
+    },
+    videos: {
+      goal: "Vertrauen durch persönliche Ansprache schaffen.",
+      counts: "Video aufgenommen oder veröffentlicht.",
+      notCounts: "Nur Video planen.",
+      actionLow: "Nimm ein kurzes 60- bis 90-Sekunden-Video auf. Thema: persönliche Erfahrung oder Gedanke des Tages.",
+      actionOk: "Ziel erreicht. Nutze das Video auch im WhatsApp-Status.",
+      focus: "Martina wirkt über Alltag, Authentizität und persönliche Perspektive."
+    }
+  }
+};
+
+function fieldExplanation(person, key, actual, target){
+  const h = fieldHelp[person] && fieldHelp[person][key];
+  if(!h) return "";
+  const ok = Number(actual) >= Number(target);
+  return `<details class="field-help">
+    <summary>Erklärung und nächster Schritt</summary>
+    <p><strong>Ziel:</strong> ${escapeHtml(h.goal)}</p>
+    <p><strong>Das zählt:</strong> ${escapeHtml(h.counts)}</p>
+    <p><strong>Das zählt nicht:</strong> ${escapeHtml(h.notCounts)}</p>
+    <p><strong>Fokus:</strong> ${escapeHtml(h.focus)}</p>
+    <p class="${ok ? 'traffic-green' : 'traffic-red'}"><strong>Empfehlung:</strong> ${escapeHtml(ok ? h.actionOk : h.actionLow)}</p>
+  </details>`;
+}
+
+function fieldInterpretation(person, f, actual){
+  const ok = Number(actual) >= Number(f.target);
+  const diff = Number(actual) - Number(f.target);
+  if(ok){
+    return `${f.label}: ${actual} von ${f.target}. Im Soll oder darüber. Nächster Schritt: Ergebnis in Gespräche, Termine oder Empfehlungen umwandeln.`;
+  }
+  return `${f.label}: ${actual} von ${f.target}. Es fehlen ${Math.abs(diff)}. Nächster Schritt: ${fieldHelp[person]?.[f.key]?.actionLow || 'Heute gezielt nacharbeiten.'}`;
+}
+
+function renderDeepRecommendations(person, title, date){
+  ensureActivityDate(date);
+  const rows = activityConfig[person].map(f=>{
+    const actual = Number(activity[date][person][f.key] || 0);
+    return {f, actual, ok: actual >= f.target};
+  });
+  const weak = rows.filter(r=>!r.ok);
+  const strong = rows.filter(r=>r.ok);
+  return `<div class="card">
+    <h3>Handlungsempfehlungen ${escapeHtml(title)}</h3>
+    <h4>Unter Soll</h4>
+    ${weak.length ? `<ul class="loss-list">${weak.map(r=>`<li class="traffic-red">${escapeHtml(fieldInterpretation(person,r.f,r.actual))}</li>`).join('')}</ul>` : `<p class="ok-text">Alle Tätigkeitsbereiche sind im Soll.</p>`}
+    <h4>Im Soll oder darüber</h4>
+    ${strong.length ? `<ul class="loss-list">${strong.map(r=>`<li class="traffic-green">${escapeHtml(fieldInterpretation(person,r.f,r.actual))}</li>`).join('')}</ul>` : `<p>Noch kein Bereich im Soll.</p>`}
+  </div>`;
+}
+
+function renderWeekMonthYearGuidance(){
+  return `<div class="card">
+    <h3>So liest du die Auswertungen</h3>
+    <p><strong>Woche:</strong> Zeigt, ob die tägliche Umsetzung stabil genug ist. Wenn ein Bereich rot ist, blocke für die nächste Woche feste Arbeitszeit.</p>
+    <p><strong>Monat:</strong> Zeigt Gewohnheiten. Rot im Monat bedeutet, dass der Bereich nicht zufällig schwach war, sondern zu wenig Priorität hatte.</p>
+    <p><strong>Jahr:</strong> Zeigt den größten Hebel. Dort, wo über Monate rot bleibt, verliert ihr Reichweite, Gespräche und Partnerchancen.</p>
+    <p><strong>Konkrete Regel:</strong> Rot wird nicht diskutiert. Rot wird geplant. Lege für jeden roten Bereich sofort eine feste Aktion für morgen fest.</p>
+  </div>`;
+}
+
 function save(){localStorage.setItem(stateKey,JSON.stringify(state))}
 function saveActivity(){localStorage.setItem(activityKey,JSON.stringify(activity))}
 function sectionById(id){return window.APP_CONTENT.sections.find(s=>s.id===id)}
@@ -96,8 +274,8 @@ function renderActivityCockpit(){
       ${renderPersonInput('peter','Peter',date)}
       ${renderPersonInput('martina','Martina',date)}
     </div>
-    ${renderDailyLossAnalysis(date)}
-    ${renderPeriodSummaries()}
+    ${renderDailyLossAnalysis(date)}${renderDeepRecommendations('peter','Peter',date)}${renderDeepRecommendations('martina','Martina',date)}
+    ${renderPeriodSummaries()}${renderWeekMonthYearGuidance()}
     ${renderHistoryTable()}
   `;
 }
@@ -125,7 +303,7 @@ function renderPersonInput(person,title,date){
             <small>Soll: ${f.target} · Bereich: ${escapeHtml(f.channel)}</small>
           </div>
           <input type="number" min="0" value="${val}" onchange="setActivity('${date}','${person}','${f.key}',this.value)">
-        </div>`;
+        </div>${fieldExplanation(person, f.key, Number(val||0), f.target)}`;
       }).join('')}
     </div>
   </div>`;

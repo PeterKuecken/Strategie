@@ -4,7 +4,14 @@ window.APP_CONTENT = {
       "id": "heute",
       "title": "1. Arbeitscockpit",
       "type": "dashboard",
-      "text": "Das tägliche Arbeitscockpit für Peter und Martina mit Tageserfassung, Tätigkeitsergebnis und Historie.",
+      "text": "Das tägliche Arbeitscockpit für Peter und Martina mit Tageserfassung, Tätigkeitsergebnis und Historie.
+
+WhatsApp Kontakte: Ziel sind neue Gespräche. Tagesziel 5.
+WhatsApp Nachfassungen: Bestehende Kontakte weiterentwickeln. Tagesziel 5.
+Facebook Kontakte: Neue Gespräche über Facebook. Tagesziel 5.
+LinkedIn Kontakte: Unternehmer und Selbständige erreichen. Tagesziel 5.
+Unternehmerkontakte: Echte Unternehmergespräche. Tagesziel 3.
+Empfehlungen: Aktiv nach Empfehlungen fragen. Tagesziel 3.",
       "peter": [
         "5 Kontakte ansprechen",
         "2 Unternehmerkontakte aufbauen",

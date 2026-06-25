@@ -12,3 +12,18 @@ Version 14
   - Rot = Ist liegt unter Soll.
 - Tätigkeitsergebnis zeigt Soll, Ist, Status und Erfüllung.
 - Die Tages-, Wochen-, Monats-, Jahres- und Historienauswertungen wurden entsprechend angepasst.
+
+
+## Version 16
+
+Eingebaut:
+
+- Erklärung direkt unter jedem Eingabefeld.
+- Was zählt und was nicht zählt.
+- Peter-spezifische Handlungsempfehlungen.
+- Martina-spezifische Handlungsempfehlungen.
+- Automatische Empfehlung bei Soll-Unterschreitung.
+- Automatische Empfehlung bei Zielerreichung.
+- Zusätzliche Interpretation für Tages-, Wochen-, Monats- und Jahresauswertung.
+- Rot wird mit konkreter nächster Aktion verbunden.
+- Grün zeigt, wie das Ergebnis weiter genutzt wird.
