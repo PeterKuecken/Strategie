@@ -1,40 +1,14 @@
 # Recruiting-Cockpit Peter & Martina Kücken
 
-Version 13
+Version 14
 
-## Technisch umgesetzt
+## Änderungen
 
-- Getrenntes Aktivitätscockpit für Peter und Martina.
-- Tägliche Erfassung nach einzelnen Bereichen.
-- Peter:
-  - WhatsApp Kontakte
-  - WhatsApp Nachfassungen
-  - Facebook Kontakte
-  - LinkedIn Kontakte
-  - Unternehmerkontakte
-  - Empfehlungen
-  - Beiträge
-  - Videos
-- Martina:
-  - Kontakte
-  - Kundenkontakte
-  - Nachfassungen
-  - Facebook Aktivität
-  - Empfehlungen
-  - Beiträge
-  - Videos
-- Tagesanalyse nach Person.
-- Verlustanalyse nach Kanal und Bereich.
-- Wochenübersicht.
-- Monatsübersicht.
-- Jahresübersicht.
-- Historie aller gespeicherten Tage.
-- Ampelsystem:
-  - Grün = 80 bis 100 Prozent
-  - Gelb = 50 bis 79 Prozent
-  - Rot = 0 bis 49 Prozent
-- Alle Daten werden lokal im Browser gespeichert.
-
-## Wichtig
-
-Die Historie ist unbegrenzt, solange der Browser-Speicher nicht gelöscht wird.
+- 1. Heute wurde ersetzt durch 1. Arbeitscockpit.
+- Schnellzugriff steht als 2. Schnellzugriff.
+- Die Begriffe Verlustanalyse und Verlustbereiche wurden durch Tätigkeitsergebnis und Tätigkeitsbereiche ersetzt.
+- Alle Auswertungen nutzen jetzt Soll/Ist-Farben:
+  - Grün = Ist liegt über oder gleich Soll.
+  - Rot = Ist liegt unter Soll.
+- Tätigkeitsergebnis zeigt Soll, Ist, Status und Erfüllung.
+- Die Tages-, Wochen-, Monats-, Jahres- und Historienauswertungen wurden entsprechend angepasst.

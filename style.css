@@ -230,3 +230,38 @@ footer{padding:10px 22px;color:var(--muted);background:#fff;border-top:1px solid
   padding:0;
   font:inherit;
 }
+
+/* Version 14: Soll/Ist-Farben */
+.traffic-green{
+  background:#d7f5df !important;
+  color:#113f1d;
+}
+.traffic-red{
+  background:#ffe0e0 !important;
+  color:#7a1f1f;
+}
+.traffic-yellow{
+  background:#ffe0e0 !important;
+  color:#7a1f1f;
+}
+.mini-table tr.traffic-green td,
+.history-table td.traffic-green,
+.period-box p.traffic-green,
+.loss-list li.traffic-green{
+  background:#d7f5df !important;
+}
+.mini-table tr.traffic-red td,
+.history-table td.traffic-red,
+.period-box p.traffic-red,
+.loss-list li.traffic-red{
+  background:#ffe0e0 !important;
+}
+.period-box p{
+  padding:8px;
+  border-radius:8px;
+}
+.loss-list li{
+  padding:6px 8px;
+  border-radius:8px;
+  margin:5px 0;
+}

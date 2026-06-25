@@ -2,9 +2,9 @@ window.APP_CONTENT = {
   "sections": [
     {
       "id": "heute",
-      "title": "1. Heute",
+      "title": "1. Arbeitscockpit",
       "type": "dashboard",
-      "text": "Das tägliche Arbeitscockpit für Peter und Martina.",
+      "text": "Das tägliche Arbeitscockpit für Peter und Martina mit Tageserfassung, Tätigkeitsergebnis und Historie.",
       "peter": [
         "5 Kontakte ansprechen",
         "2 Unternehmerkontakte aufbauen",
@@ -20,11 +20,11 @@ window.APP_CONTENT = {
         "1 Nachfassung erledigen"
       ],
       "plainTitle": "Heute",
-      "navTitle": "1. Heute"
+      "navTitle": "1. Arbeitscockpit"
     },
     {
       "id": "schnellzugriff",
-      "title": "Schnellzugriff",
+      "title": "2. Schnellzugriff",
       "type": "links",
       "tags": [
         "Navigation"
@@ -80,7 +80,7 @@ window.APP_CONTENT = {
         }
       ],
       "plainTitle": "Schnellzugriff",
-      "navTitle": "Schnellzugriff"
+      "navTitle": "2. Schnellzugriff"
     },
     {
       "id": "e9",

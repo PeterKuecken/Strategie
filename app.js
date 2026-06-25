@@ -72,7 +72,7 @@ function render(){
 function renderDashboard(s){
   view.innerHTML=`
     <div class="card">
-      <h2>${escapeHtml(s.title || '1. Heute')}</h2>
+      <h2>${escapeHtml(s.title || '1. Arbeitscockpit')}</h2>
       <p>${escapeHtml(s.text || 'Das tägliche Arbeitscockpit für Peter und Martina.')}</p>
     </div>
     ${renderActivityCockpit()}
@@ -119,7 +119,7 @@ function renderPersonInput(person,title,date){
       ${fields.map(f=>{
         const val=activity[date][person][f.key] ?? '';
         const percent=calcPercent(Number(val||0),f.target);
-        return `<div class="activity-row ${trafficClass(percent)}">
+        return `<div class="activity-row ${targetClass(Number(val||0), f.target)}">
           <div>
             <strong>${escapeHtml(f.label)}</strong>
             <small>Soll: ${f.target} · Bereich: ${escapeHtml(f.channel)}</small>
@@ -159,14 +159,21 @@ function renderScoreBadge(percent){
 }
 
 function trafficClass(percent){
-  if(percent>=80)return 'traffic-green';
-  if(percent>=50)return 'traffic-yellow';
+  if(percent>=100)return 'traffic-green';
   return 'traffic-red';
+}
+
+function targetClass(actual,target){
+  return Number(actual) >= Number(target) ? 'traffic-green' : 'traffic-red';
+}
+
+function targetStatus(actual,target){
+  return Number(actual) >= Number(target) ? 'Im Soll' : 'Unter Soll';
 }
 
 function renderDailyLossAnalysis(date){
   return `<div class="card">
-    <h3>Verlustanalyse für ${formatDate(date)}</h3>
+    <h3>Tätigkeitsergebnis für ${formatDate(date)}</h3>
     <div class="grid">
       ${renderLossList('peter','Peter',date)}
       ${renderLossList('martina','Martina',date)}
@@ -184,13 +191,18 @@ function renderLossList(person,title,date){
   }).filter(x=>x.missing>0).sort((a,b)=>a.percent-b.percent || b.missing-a.missing);
 
   if(!losses.length){
-    return `<div><h4>${title}</h4><p class="ok-text">Alles erfüllt. Kein Verlust in den geplanten Bereichen.</p></div>`;
+    return `<div><h4>${title}</h4><p class="ok-text">Alles erfüllt. Kein Unter Soll in den geplanten Bereichen.</p></div>`;
   }
+  const allRows=activityConfig[person].map(f=>{
+    const actual=Number(activity[date][person][f.key]||0);
+    const percent=calcPercent(actual,f.target);
+    return {...f,actual,percent};
+  });
   return `<div><h4>${title}</h4>
     <table class="mini-table">
-      <thead><tr><th>Bereich</th><th>Soll</th><th>Ist</th><th>Erfüllung</th></tr></thead>
+      <thead><tr><th>Bereich</th><th>Soll</th><th>Ist</th><th>Status</th><th>Erfüllung</th></tr></thead>
       <tbody>
-        ${losses.map(x=>`<tr class="${trafficClass(x.percent)}"><td>${escapeHtml(x.label)}</td><td>${x.target}</td><td>${x.actual}</td><td>${x.percent}%</td></tr>`).join('')}
+        ${allRows.map(x=>`<tr class="${targetClass(x.actual,x.target)}"><td>${escapeHtml(x.label)}</td><td>${x.target}</td><td>${x.actual}</td><td>${targetStatus(x.actual,x.target)}</td><td>${x.percent}%</td></tr>`).join('')}
       </tbody>
     </table>
   </div>`;
@@ -241,10 +253,10 @@ function renderPeriodBox(label,dates){
   const martina=calcPeriodStats('martina',dates);
   return `<div class="period-box">
     <h4>${label}</h4>
-    <p><strong>Peter:</strong> ${peter.percent}% · Ist ${peter.actual} von Soll ${peter.target}</p>
-    <p><strong>Martina:</strong> ${martina.percent}% · Ist ${martina.actual} von Soll ${martina.target}</p>
+    <p class="${targetClass(peter.actual,peter.target)}"><strong>Peter:</strong> ${peter.percent}% · Ist ${peter.actual} von Soll ${peter.target} · ${targetStatus(peter.actual,peter.target)}</p>
+    <p class="${targetClass(martina.actual,martina.target)}"><strong>Martina:</strong> ${martina.percent}% · Ist ${martina.actual} von Soll ${martina.target} · ${targetStatus(martina.actual,martina.target)}</p>
     <details>
-      <summary>Verlustbereiche anzeigen</summary>
+      <summary>Tätigkeitsbereiche anzeigen</summary>
       ${renderPeriodLosses('Peter',peter.losses)}
       ${renderPeriodLosses('Martina',martina.losses)}
     </details>
@@ -274,9 +286,9 @@ function calcPeriodStats(person,dates){
 }
 
 function renderPeriodLosses(title,losses){
-  if(!losses.length)return `<p class="ok-text">${title}: keine Verlustbereiche.</p>`;
+  if(!losses.length)return `<p class="ok-text">${title}: keine Tätigkeitsbereiche.</p>`;
   return `<h5>${title}</h5><ul class="loss-list">
-    ${losses.slice(0,8).map(x=>`<li>${escapeHtml(x.label)}: ${x.actual}/${x.target} · ${x.percent}% · Verlust ${x.missing}</li>`).join('')}
+    ${losses.slice(0,8).map(x=>`<li>${escapeHtml(x.label)}: ${x.actual}/${x.target} · ${x.percent}% · Unter Soll ${x.missing}</li>`).join('')}
   </ul>`;
 }
 
@@ -288,7 +300,7 @@ function renderHistoryTable(){
     <p class="small">Alle gespeicherten Tage werden angezeigt.</p>
     <div class="table-wrap">
       <table class="history-table">
-        <thead><tr><th>Datum</th><th>Peter</th><th>Martina</th><th>Gesamt</th><th>Größte Verluste</th></tr></thead>
+        <thead><tr><th>Datum</th><th>Peter</th><th>Martina</th><th>Gesamt</th><th>Tätigkeitsergebnis</th></tr></thead>
         <tbody>
           ${dates.map(d=>{
             const p=calcPersonStatsForDate('peter',d);
@@ -298,9 +310,9 @@ function renderHistoryTable(){
             const total=totalTarget?Math.round((totalActual/totalTarget)*100):0;
             return `<tr>
               <td><button class="link-button" onclick="selectedActivityDate='${d}'; render(); window.scrollTo({top:0,behavior:'smooth'});">${formatDate(d)}</button></td>
-              <td class="${trafficClass(p.percent)}">${p.percent}%</td>
-              <td class="${trafficClass(m.percent)}">${m.percent}%</td>
-              <td class="${trafficClass(total)}">${total}%</td>
+              <td class="${targetClass(p.actual,p.target)}">${p.percent}%</td>
+              <td class="${targetClass(m.actual,m.target)}">${m.percent}%</td>
+              <td class="${targetClass(totalActual,totalTarget)}">${total}%</td>
               <td>${escapeHtml(shortLossSummary(d))}</td>
             </tr>`;
           }).join('')}
@@ -313,7 +325,7 @@ function renderHistoryTable(){
 function shortLossSummary(date){
   const p=topLoss('peter',date);
   const m=topLoss('martina',date);
-  return `Peter: ${p || 'kein Verlust'} · Martina: ${m || 'kein Verlust'}`;
+  return `Peter: ${p || 'alles im Soll'} · Martina: ${m || 'alles im Soll'}`;
 }
 
 function topLoss(person,date){
